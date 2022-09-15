@@ -2,13 +2,15 @@ const express = require('express')
 const router = express.Router()
 const { getLogs, addLog, updateLog, deleteLog } = require('../controllers/logController')
 
-router.get('/', getLogs)
+const {protect} = require('../middleware/authMiddleware')
 
-router.post('/', addLog)
+router.get('/', protect, getLogs)
 
-router.put('/:id', updateLog)
+router.post('/', protect, addLog)
 
-router.delete('/:id', deleteLog)
+router.put('/:id', protect, updateLog)
+
+router.delete('/:id', protect, deleteLog)
 
 // Condensed routing option:
 // router.route('/').get(getLogs).post(addLog)
