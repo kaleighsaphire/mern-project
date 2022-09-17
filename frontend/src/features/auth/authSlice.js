@@ -5,7 +5,6 @@ import authService from './authService'
 const user = JSON.parse(localStorage.getItem('user'))
 
 const initialState = {
-    // user in localStorage ?
     user: user ? user : null,
     isError: false,
     isSuccess: false,
@@ -54,7 +53,6 @@ export const logout = createAsyncThunk('auth/logout', async () => {
 export const authSlice = createSlice({
     name: 'auth',
     initialState,
-    // After register, reset values back to false
     reducers: {
         reset: (state) => {
             state.isLoading = false
@@ -95,8 +93,7 @@ export const authSlice = createSlice({
         })
         .addCase(logout.fulfilled, (state) => {
             state.user = null
-        })
-        
+        })   
     }
 })
 

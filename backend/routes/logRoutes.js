@@ -4,16 +4,16 @@ const { getLogs, addLog, updateLog, deleteLog } = require('../controllers/logCon
 
 const {protect} = require('../middleware/authMiddleware')
 
-router.get('/', protect, getLogs)
+// router.get('/', protect, getLogs)
 
-router.post('/', protect, addLog)
+// router.post('/', protect, addLog)
 
-router.put('/:id', protect, updateLog)
+// router.put('/:id', protect, updateLog)
 
-router.delete('/:id', protect, deleteLog)
+// router.delete('/:id', protect, deleteLog)
 
 // Condensed routing option:
-// router.route('/').get(getLogs).post(addLog)
-// router.route('/:id').delete(deleteLog).put(updateLog)
+router.route('/').get(protect, getLogs).post(protect, addLog)
+router.route('/:id').delete(protect, deleteLog).put(protect, updateLog)
 
 module.exports = router
