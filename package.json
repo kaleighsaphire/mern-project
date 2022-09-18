@@ -1,7 +1,7 @@
 {
   "name": "mern-folder",
   "version": "1.0.0",
-  "description": "",
+  "description": "Book and Reading tracker",
   "main": "server.js",
   "scripts": {
     "start": "node backend/server.js",

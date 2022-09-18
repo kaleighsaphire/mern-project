@@ -20,14 +20,17 @@ function LogForm() {
     <section className="form">
         <form onSubmit={onSubmit}>
             <div className="form-group">
-                <label htmlFor="text">Reading Log</label>
-                <input type="text" 
+                <label htmlFor="title">Book Title</label>
+                <input 
+                type="text" 
                 name="title" 
                 id="title" 
-                placeholder="Entry Title"
+                placeholder="Book Title"
                 value={title} 
                 onChange={(e)=>setTitle(e.target.value)} />
-                <input type="text" 
+                <label htmlFor="text">Reading Log</label>
+                <input 
+                type="text" 
                 name="text" 
                 id="text" 
                 placeholder="Entry Text"
