@@ -20,7 +20,7 @@ function LogForm() {
     <section className="form">
         <form onSubmit={onSubmit}>
             <div className="form-group">
-                <label htmlFor="title">Book Title</label>
+                <label htmlFor="title"></label>
                 <input 
                 type="text" 
                 name="title" 
@@ -28,12 +28,12 @@ function LogForm() {
                 placeholder="Book Title"
                 value={title} 
                 onChange={(e)=>setTitle(e.target.value)} />
-                <label htmlFor="text">Reading Log</label>
-                <input 
+                <label htmlFor="text"></label>
+                <textarea 
                 type="text" 
                 name="text" 
                 id="text" 
-                placeholder="Entry Text"
+                placeholder="Reading log entry..."
                 value={text} 
                 onChange={(e)=>setText(e.target.value)} />
             </div>

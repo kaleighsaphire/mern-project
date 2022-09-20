@@ -1,4 +1,5 @@
 import {useDispatch} from 'react-redux'
+import {FaRegTrashAlt} from 'react-icons/fa'
 import {deleteLog} from '../features/logs/logSlice'
 
 const LogEntry = ({log}) => {
@@ -7,11 +8,11 @@ const LogEntry = ({log}) => {
   return (
     <div className="log">
       <div>
-        {new Date(log.createdAt).toLocaleString('en-US')}
+        <span className="date">{new Date(log.createdAt).toLocaleString([], { dateStyle: 'short'})}</span>
       </div>
-      <h2>{log.title}</h2>
-      <h3>{log.text}</h3>
-      <button onClick={()=> dispatch(deleteLog(log._id))}className="close">X</button>
+      <h3>{log.title}</h3>
+      <p>{log.text}</p>
+      <button onClick={()=> dispatch(deleteLog(log._id))}className="close"><FaRegTrashAlt /></button>
     </div>
   )
 }

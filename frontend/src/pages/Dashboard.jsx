@@ -38,7 +38,7 @@ function Dashboard() {
     <>
     <section className="heading">
       <h1>Welcome {user && user.name}</h1>
-      <p>Reading Log Entries</p>
+      <p>What have you been reading?</p>
     </section>
 
     <LogForm />

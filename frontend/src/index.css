@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +6,9 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  height: 100vh;
+  font-family: 'Roboto Slab', serif;
+  min-height: 100vh;
+  background-color: rgb(235, 225, 248);
 }
 
 a {
@@ -31,11 +31,15 @@ li {
 h1,
 h2,
 h3 {
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 10px;
 }
 
 .container {
+  display:flex; 
+  flex-direction:column; 
+  min-height: 100vh;
+  margin: 0;
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
@@ -75,6 +79,14 @@ h3 {
   margin-right: 5px;
 }
 
+.footer {
+  margin-top: auto;
+  font-size: .75rem;
+
+  background-color: rgb(235, 225, 248);
+  text-align: center;
+}
+
 .heading {
   font-size: 2rem;
   font-weight: 700;
@@ -83,19 +95,20 @@ h3 {
 }
 
 .heading p {
-  color: #828282;
+  color: rgb(23, 138, 88, .5);
 }
 
 .logs {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 10px;
 }
 
 .log {
-  background-color: #f4f4f4;
+  background-color: #e1daf5;
   margin: 10px 0;
   padding: 20px 0 10px;
+  border-radius: 10px;
   position: relative;
 }
 
@@ -135,13 +148,26 @@ h3 {
   margin: 0 0 5px 3px;
 }
 
+
+.date {
+  font-size: .75rem;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.close:hover {
+  color: red;
+}
+
 .btn {
-  padding: 10px 20px;
-  border: 1px solid #000;
+  font-family: 'Roboto Slab', serif;
+  background: rgb(23, 138, 88, .5);
+  padding: 8px 15px;
+  border: 1px solid rgb(23, 138, 88);
   border-radius: 5px;
-  background: #000;
   color: #fff;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 700;
   cursor: pointer;
   text-align: center;
@@ -175,7 +201,7 @@ h3 {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(23, 138, 88, .5);
   z-index: 5000;
   display: flex;
   justify-content: center;
@@ -201,9 +227,6 @@ h3 {
 }
 
 @media (max-width: 600px) {
-  .form {
-    width: 90%;
-  }
 
   .heading h1 {
     font-size: 2rem;
@@ -211,6 +234,9 @@ h3 {
 
   .heading p {
     font-size: 1.5rem;
+  }
+  p {
+    font-size: .8rem;
   }
 }
 
