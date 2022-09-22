@@ -15,6 +15,7 @@ const bookSchema = mongoose.Schema(
         type: String,
         required: [true, 'Please add an author']
     },
-    }
+    }, 
+    {timestamps: true}
 )
 module.exports = mongoose.model('Book', bookSchema)

@@ -21,24 +21,23 @@ function Header() {
         </div>
         <ul>
             {user ? (
-            <li>
-                <button className='btn' onClick={onLogout}>
-                     Logout
-                    </button>
-            </li>
+                <>
+                    <li>
+                        <Link to='/library'>Library</Link>
+                    </li>
+                    <li>
+                        <button className='btn' onClick={onLogout}>Logout</button>
+                    </li>
+                </>
             ) : (
-            <>
-                <li>
-                    <Link to='/login'>
-                         Login
-                    </Link>
-                </li>
-                <li>
-                    <Link to='/register'>
-                         Register
-                    </Link>
-                </li>
-            </>
+                <>
+                    <li>
+                        <Link to='/login'>Login</Link>
+                    </li>
+                    <li>
+                        <Link to='/register'>Register</Link>
+                    </li>
+                </>
             )}           
         </ul>
     </header>

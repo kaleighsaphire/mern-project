@@ -77,7 +77,7 @@ const deleteBook = asyncHandler(async (req, res) => {
     }
 
     // Ensure login user matches log user
-    if(log.user.toString() !== req.user.id){
+    if(book.user.toString() !== req.user.id){
         res.status(401)
         throw new Error('User not authorized')
     }
