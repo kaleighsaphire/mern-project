@@ -8,12 +8,12 @@
 body {
   font-family: 'Roboto Slab', serif;
   min-height: 100vh;
-  background-color: rgb(235, 225, 248);
+  background-color: rgb(190, 229, 217);
 }
 
 a {
   text-decoration: none;
-  color: #000;
+  color: rgb(255, 255, 255);
 }
 
 p {
@@ -51,9 +51,12 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
-  border-bottom: 1px solid #e6e6e6;
+  padding: 20px 20px;
+  border-radius: 10px;
   margin-bottom: 60px;
+  background-image: url(./books.jpg);
+  background-blend-mode: exclusion;
+  background-color: rgb(43, 109, 89);
 }
 
 .header ul {
@@ -72,7 +75,7 @@ h3 {
 }
 
 .header ul li a:hover {
-  color: #777;
+  color: rgb(190, 229, 217);
 }
 
 .header ul li a svg {
@@ -82,9 +85,10 @@ h3 {
 .footer {
   margin-top: auto;
   font-size: .75rem;
-
-  background-color: rgb(235, 225, 248);
+  color: rgb(190, 229, 217);
+  background-color: rgb(9, 110, 80, .5);
   text-align: center;
+  border-radius: 5px;
 }
 
 .heading {
@@ -105,7 +109,7 @@ h3 {
 }
 
 .log {
-  background-color: #e1daf5;
+  background-color: rgba(14, 167, 121, 0.3);
   margin: 10px 0;
   padding: 20px 0 10px;
   border-radius: 10px;
@@ -162,9 +166,9 @@ h3 {
 
 .btn {
   font-family: 'Roboto Slab', serif;
-  background: rgb(23, 138, 88, .5);
+  background: rgba(185, 32, 103, 0.8);
   padding: 8px 15px;
-  border: 1px solid rgb(23, 138, 88);
+  border: 1px solid rgb(220, 11, 129);
   border-radius: 5px;
   color: #fff;
   font-size: 12px;

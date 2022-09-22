@@ -17,6 +17,7 @@ app.use(express.urlencoded({extended: false}))
 // Routes
 app.use('/api/logs', require('./routes/logRoutes'))
 app.use('/api/users', require('./routes/userRoutes'))
+app.use('/api/books', require('./routes/bookRoutes'))
 
 // Serve frontend
 if (process.env.NODE_ENV === 'production') {
