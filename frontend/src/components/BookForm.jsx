@@ -29,7 +29,7 @@ function BookForm() {
                 value={title} 
                 onChange={(e)=>setTitle(e.target.value)} />
                 <label htmlFor="author"></label>
-                <textarea 
+                <input 
                 type="text" 
                 name="author" 
                 id="author" 
@@ -39,7 +39,7 @@ function BookForm() {
             </div>
             <div className="form-group">
                 <button className="btn btn-block" type="submit">
-                    Add Book
+                    Add Book To Library
                 </button>
             </div>
         </form>

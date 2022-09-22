@@ -6,11 +6,18 @@ const BookEntry = ({book}) => {
     const dispatch = useDispatch()
 
   return (
-    <div className="book">
-      <h3>{book.title}</h3>
-      <h4>{book.author}</h4>
-      <button onClick={()=> dispatch(deleteBook(book._id))}className="close"><FaRegTrashAlt /></button>
-    </div>
+    <>
+      <div className="book-container">
+        <div className="book">
+          <div className="book-cover">
+            <h3 className="book-title">{book.title}</h3>
+            <span className="by">By</span>
+            <h5 className="book-author">{book.author}</h5>
+          </div>
+          <button onClick={()=> dispatch(deleteBook(book._id))}className="delete"><FaRegTrashAlt /></button>
+        </div>
+      </div>
+    </>
   )
 }
 
