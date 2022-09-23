@@ -1,4 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;700&display=swap');
+
+/*************************/
+/******************RESET**/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
 button,
 input,
 optgroup,
@@ -7,13 +45,14 @@ textarea {
   border: none;
   margin: 0;
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*************************/
+/*********General Styling*/
 body {
   font-family: 'Roboto Slab', serif;
   min-height: 100vh;
@@ -29,10 +68,6 @@ p {
   line-height: 1.7;
 }
 
-ul {
-  list-style: none;
-}
-
 li {
   line-height: 2.2;
 }
@@ -44,6 +79,8 @@ h3 {
   margin-bottom: 10px;
 }
 
+/*************************/
+/**********Main Container*/
 .container {
   display:flex; 
   flex-direction:column; 
@@ -91,14 +128,14 @@ h3 {
 .header ul li a svg {
   margin-right: 5px;
 }
-
+/*************************/
+/****************Headings*/
 .heading {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 50px;
   padding: 0 20px;
 }
-
 .heading p {
   color: rgb(23, 138, 88, .5);
 }
@@ -137,6 +174,17 @@ h3 {
   border: none;
   background: none;
 }
+
+.close:hover {
+  color: red;
+}
+
+.date {
+  font-size: .75rem;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
 /*************************/
 /****************Log Form*/
 .form,
@@ -166,17 +214,6 @@ h3 {
   margin: 0 0 5px 3px;
 }
 
-/*************************/
-/********************Misc*/
-.date {
-  font-size: .75rem;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-.close:hover {
-  color: red;
-}
 /*************************/
 /******************Button*/
 .btn {
@@ -233,11 +270,25 @@ h3 {
   border: 3px solid rgb(121, 120, 120);
   border-top: 1px solid rgb(85, 82, 82);;
   border-bottom: 5px solid rgb(241, 241, 217);
-  border-right: 7px inset rgb(239, 239, 209);
-  border-radius: 10px 5px 5px 12px;
+  border-right: 5px inset rgb(216, 216, 190);
+  border-radius: 10px 3px 3px 8px;
   box-shadow: 6px 8px 10px 5px rgb(128, 128, 128, .3);
-  background-image: linear-gradient(to right,rgba(41, 40, 41, 0.5) 10px, rgb(198, 139, 204) 15px, transparent 15px);  
-  
+  background-image: linear-gradient(to right,rgba(41, 40, 41, 0.5) 10px, rgb(198, 139, 204) 15px, transparent 15px);   
+}
+.Mystery {
+  /* position: relative;
+  width:100px; */
+  height:150px;
+  /* font-size: .8rem;
+  color: rgb(88, 81, 81); */
+  background: rgb(139, 140, 204);
+  /* border: 3px solid rgb(121, 120, 120);
+  border-top: 1px solid rgb(85, 82, 82);;
+  border-bottom: 5px solid rgb(241, 241, 217);
+  border-right: 5px inset rgb(216, 216, 190);*/
+  border-radius: 10px 3px 3px 8px; 
+  /* box-shadow: 6px 8px 10px 5px rgb(128, 128, 128, .3); */
+  background-image: linear-gradient(to right,rgba(41, 40, 41, 0.5) 10px, rgb(139, 140, 204) 15px, transparent 15px);   
 }
 .by {
   font-size: .6rem;;
@@ -251,10 +302,11 @@ h3 {
   padding: 0 15px;
 }
 .delete {
+  font-size: x-small;
   color: rgb(150, 146, 146);
   cursor: pointer;
   position: absolute;
-  bottom: 6px;
+  bottom: 4px;
   left: 0px;
   background: none;
 }   
@@ -296,6 +348,8 @@ h3 {
   }
 }
 
+/*************************/
+/***********Media Queries*/
 @media (max-width: 600px) {
 
   .heading h1 {

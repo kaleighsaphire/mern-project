@@ -9,11 +9,15 @@ const bookSchema = mongoose.Schema(
     },
     title: {
         type: String,
-        required: [true, 'Please add a title']
+        required: [true, 'Please add a book title']
     },
     author: {
         type: String,
         required: [true, 'Please add an author']
+    },
+    genre: {
+        type: String,
+        required: [true, 'Please select a genre']
     },
     }, 
     {timestamps: true}

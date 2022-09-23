@@ -9,7 +9,7 @@ const BookEntry = ({book}) => {
     <>
       <div className="book-container">
         <div className="book">
-          <div className="book-cover">
+          <div className='book-genre'>
             <h3 className="book-title">{book.title}</h3>
             <span className="by">By</span>
             <h5 className="book-author">{book.author}</h5>
