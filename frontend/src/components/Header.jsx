@@ -23,6 +23,9 @@ function Header() {
             {user ? (
                 <>
                     <li>
+                        <Link to='/blog'>Blog</Link>
+                    </li>
+                    <li>
                         <Link to='/library'>Library</Link>
                     </li>
                     <li>

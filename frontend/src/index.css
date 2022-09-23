@@ -80,7 +80,7 @@ h3 {
 }
 
 /*************************/
-/**********Main Container*/
+/**********Main Containers*/
 .container {
   display:flex; 
   flex-direction:column; 
@@ -92,6 +92,12 @@ h3 {
   padding: 0 15px;
   text-align: center;
 }
+
+.main-link {
+  margin: 0 50%;
+  position: relative;
+}
+
 /*************************/
 /******************Header*/
 .header {
@@ -150,6 +156,120 @@ h3 {
   text-align: center;
   border-radius: 5px;
 }
+
+/*************************/
+/***************Open Book*/
+.journal {
+  color: rgb(0, 0, 0, .6);
+  font-size: 13px;
+  line-height: 1.2em;
+  margin: 30% 0;
+  text-transform: uppercase;
+  text-shadow: 1px 1px rgb(85, 85, 85, .5);
+}
+.book-text {
+  color: rgb(86, 85, 85);
+  font-size: 5px;
+  margin: 12px 2px;
+ 
+}
+.special {
+  margin: 10px 2px;
+  font-size: 13px;
+}
+
+.book1 {
+  transform-style: preserve-3d;
+  position: relative;
+  height: 150px;
+  cursor: pointer;
+  backface-visibility: visible;
+}
+
+.front, .back, .page1, .page2, .page3, .page4, .page5, .page6 {
+  transform-style: preserve-3d;
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  top: 0; left: 0;
+  transform-origin: left center;
+  transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
+}
+.front {
+  border: 3px solid rgb(121, 120, 120);
+  border-top: 1px solid rgb(85, 82, 82);;
+  border-bottom: 3px solid rgb(239, 239, 239);
+  border-right: 5px inset rgb(250, 250, 250);
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: 6px 8px 9px 4px rgb(128, 128, 128, .3);
+}
+.front, .back {
+  background: rgba(155, 44, 96, 0.5);
+}
+
+.front, .page1, .page3, .page5 {
+  border-bottom-right-radius: .5em;
+  border-top-right-radius: .5em;
+}
+
+.back, .page2, .page4, .page6 {
+  border-bottom-right-radius: .5em;
+  border-top-right-radius: .5em;
+}
+
+.page1, .page2 { 
+  background: rgb(239, 239, 239);
+}
+
+.page3, .page4 {
+  background: rgb(245, 245, 245);
+}
+
+.page5, .page6 {
+  background: rgb(250, 250, 250);
+}
+
+.book1:hover .front {
+  transform: rotateY(-160deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  border-right: none;
+  border-bottom: none;
+}
+
+.book1:hover .page1 {
+  transform: rotateY(-150deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book1:hover .page2 {
+  transform: rotateY(-30deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book1:hover .page3 {
+  transform: rotateY(-140deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book1:hover .page4 {
+  transform: rotateY(-40deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book1:hover .page5 {
+  transform: rotateY(-130deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book1:hover .page6 {
+  transform: rotateY(-50deg) scale(1.1);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+
+.book1:hover .back {
+  transform: rotateY(-20deg) scale(1.1);
+}
+
 /*************************/
 /*********************Log*/
 .logs {
@@ -256,6 +376,7 @@ h3 {
 .books {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
