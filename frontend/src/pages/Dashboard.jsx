@@ -29,7 +29,7 @@ function Dashboard() {
     </section>
     <section className="page-links">
       <Link to='/blog'>
-        <div className="main-link">
+        <div className="journal-link">
           <div class="book1">
             <div className="back"></div>
             <div className="page6">
