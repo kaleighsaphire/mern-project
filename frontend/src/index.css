@@ -56,7 +56,7 @@ textarea {
 body {
   font-family: 'Roboto Slab', serif;
   min-height: 100vh;
-  background-color: rgb(214, 243, 234);
+  background-color: rgb(253, 253, 253);
 }
 
 a {
@@ -110,9 +110,9 @@ h3 {
   padding: 20px 20px;
   margin-bottom: 60px;
   border-radius: 10px;
-  border: 6px double rgb(120, 40, 77);
-  background-color: rgba(172, 56, 110, .8);
-  box-shadow: inset 3px 2px 15px 1px rgba(0,0,0,0.5);
+  border: 6px double rgb(193, 75, 130);
+  background-color: rgba(172, 56, 110, .7);
+  box-shadow: inset 3px 2px 15px 1px rgba(139, 139, 139, 0.5);
 }
 .header ul {
   display: flex;
@@ -130,8 +130,7 @@ h3 {
 }
 
 .header ul li a:hover {
-  color: rgb(61, 111, 96);
-  text-shadow: 1px 1px rgba(255, 255, 255, 0.4);
+  color: rgb(10, 221, 158);
 }
 
 .header ul li a svg {
@@ -139,11 +138,11 @@ h3 {
 }
 .logo>a  {
   color: rgb(245, 243, 243);
-  padding: 8px;
+  padding: 8px 15px;
   border-radius: 5px;
-  border: 2px solid rgb(220, 11, 129);
-  background-color: rgb(220, 11, 129, .4);
-  box-shadow: inset 3px 2px 15px 1px rgba(0,0,0,0.3);
+  border: 3px double rgb(7, 172, 123);
+  background: rgba(80, 146, 126, 0.7);
+  box-shadow: inset 1px 2px 15px 1px rgba(61, 61, 61, 0.3);
   cursor: pointer;
 }
 .logo:hover {
@@ -158,7 +157,7 @@ h3 {
   padding: 0 20px;
 }
 .heading>p {
-  color: rgba(185, 32, 103, 0.8);
+  color: rgb(61, 111, 96);
 }
 .blog-dashboard {
  position: relative;
@@ -192,16 +191,16 @@ h3 {
   margin-bottom: 2px;
   padding: 2px 0;;
   border-radius: 5px;
-  border: 3px double rgb(9, 110, 80);
+  border: 3px double rgb(9, 110, 80, .3);
   background-color: rgb(9, 110, 80, .5);
 }
 .footer>a {
   font-size: .75rem;
-  color: #000;
+  color: rgb(253, 253, 253);
   padding: 1px 20px;
-  border: 1px solid rgb(9, 110, 80);
+  border: 1px solid rgb(9, 110, 80, .5);
   border-radius: 5px;
-  background-color: rgb(190, 229, 217);
+  background-color: rgba(241, 244, 243, 0.3);
 }
 
 /*************************/
@@ -642,7 +641,7 @@ h3 {
 }
 
 .log {
-  background-color: rgba(14, 167, 121, 0.3);
+  background-color: rgba(237, 161, 197, 0.3);;
   margin: 10px 0;
   padding: 20px 0 10px;
   border-radius: 10px;
@@ -683,12 +682,14 @@ h3 {
 .form-group input,
 .form-group textarea,
 .form-group select {
+  font-family: inherit;
   width: 100%;
   padding: 10px;
-  border: 1px solid #e6e6e6;
-  border-radius: 5px;
   margin-bottom: 10px;
-  font-family: inherit;
+  border: 1px solid rgba(14, 167, 121);
+  border-radius: 5px;
+  background-color: rgba(91, 210, 174, 0.1);
+  caret-color: rgb(220, 11, 129);
 }
 
 .form-group label {
@@ -701,11 +702,11 @@ h3 {
 /******************Button*/
 .btn {
   font-family: 'Roboto Slab', serif;
-  background: rgba(185, 32, 103, 0.8);
+  background: rgba(80, 146, 126, 0.7);
   padding: 8px 15px;
-  border: 1px solid rgb(220, 11, 129);
+  border: 1px solid rgb(7, 172, 123);
   border-radius: 5px;
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-size: 12px;
   font-weight: 700;
   cursor: pointer;
@@ -731,6 +732,7 @@ h3 {
 }
 
 .btn:hover {
+  background-color: rgba(172, 56, 110, .6);
   transform: scale(0.98);
 }
 
