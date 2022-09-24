@@ -56,7 +56,7 @@ textarea {
 body {
   font-family: 'Roboto Slab', serif;
   min-height: 100vh;
-  background-color: rgb(190, 229, 217);
+  background-color: rgb(214, 243, 234);
 }
 
 a {
@@ -96,9 +96,9 @@ h3 {
 .link-container {
   margin: 20px 15%;
   border-radius: 10px;
-  border: 4px double rgb(47, 74, 65);
-  background-color: rgb(92, 144, 128);
-  box-shadow: inset 6px 3px 20px 1px rgba(0,0,0,0.5);
+  border: 4px double rgb(244, 247, 246);
+  background-color: rgb(157, 212, 197);
+  box-shadow: inset 4px 2px 15px 1px rgba(0,0,0,0.5);
 }
 
 /*************************/
@@ -112,7 +112,7 @@ h3 {
   border-radius: 10px;
   border: 6px double rgb(120, 40, 77);
   background-color: rgba(172, 56, 110, .8);
-  box-shadow: inset 10px 10px 15px 1px rgba(0,0,0,0.5);
+  box-shadow: inset 3px 2px 15px 1px rgba(0,0,0,0.5);
 }
 .header ul {
   display: flex;
@@ -130,20 +130,24 @@ h3 {
 }
 
 .header ul li a:hover {
-  color: rgb(190, 229, 217);
+  color: rgb(61, 111, 96);
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.4);
 }
 
 .header ul li a svg {
   margin-right: 5px;
 }
 .logo>a  {
-  color: rgb(0, 0, 0);
+  color: rgb(245, 243, 243);
   padding: 8px;
   border-radius: 5px;
-  border: 4px double rgb(114, 113, 115);
-  background-color: rgb(253, 253, 253);
+  border: 2px solid rgb(220, 11, 129);
+  background-color: rgb(220, 11, 129, .4);
   box-shadow: inset 3px 2px 15px 1px rgba(0,0,0,0.3);
   cursor: pointer;
+}
+.logo:hover {
+  transform: scale(0.98);
 }
 /*************************/
 /****************Headings*/
@@ -153,8 +157,8 @@ h3 {
   margin-bottom: 50px;
   padding: 0 20px;
 }
-.heading p {
-  color: rgb(23, 138, 88, .5);
+.heading>p {
+  color: rgba(185, 32, 103, 0.8);
 }
 .blog-dashboard {
  position: relative;
@@ -184,13 +188,20 @@ h3 {
 /*************************/
 /******************Footer*/
 .footer {
-  font-size: .75rem;
-  text-align: center;
   margin-top: auto;
+  margin-bottom: 2px;
+  padding: 2px 0;;
   border-radius: 5px;
-  color: rgb(190, 229, 217);
   border: 3px double rgb(9, 110, 80);
   background-color: rgb(9, 110, 80, .5);
+}
+.footer>a {
+  font-size: .75rem;
+  color: #000;
+  padding: 1px 20px;
+  border: 1px solid rgb(9, 110, 80);
+  border-radius: 5px;
+  background-color: rgb(190, 229, 217);
 }
 
 /*************************/
@@ -244,7 +255,7 @@ h3 {
   border-bottom: 3px solid rgb(239, 239, 239);
   border-right: 5px inset rgb(250, 250, 250);
   border-radius: 2px 3px 3px 2px;
-  box-shadow: inset 2px 2px 6px 1px rgba(0,0,0,0.5);
+  box-shadow: inset 1px 1px 6px 1px rgba(0,0,0,0.5);
 }
 .front, .back {
   background: rgba(172, 56, 110, 0.7);
@@ -571,7 +582,7 @@ h3 {
   margin-right: 200px;
   margin-bottom: 1.5px;
   border-radius: 1px; 
-  background: rgb(207, 102, 102);
+  background: rgb(196, 73, 131);
   box-shadow: inset 3px -2px 6px 1px rgba(0,0,0,0.5);
   cursor: url('./book.png'), auto;
 }
@@ -739,15 +750,18 @@ h3 {
   font-size: .8rem;
   color: rgb(255, 254, 254);
   border: 3px solid rgb(121, 120, 120);
-  border-top: 1px solid rgb(85, 82, 82);;
-  border-bottom: 3px solid rgb(234, 234, 234);
-  border-right: 5px inset rgb(208, 208, 208);
-  border-radius: 8px 3px 3px 8px;
-  box-shadow: 2px 6px 6px 2px rgb(128, 128, 128, .3);
+  border-top: 1px solid rgb(98, 96, 96);;
+  border-bottom: 3px solid rgb(224, 222, 222);
+  border-right: 4px inset rgb(247, 247, 246);
+  border-radius: 8px 5px 3px 8px;
+  /* box-shadow: 2px 6px 6px 2px rgb(128, 128, 128, .3); */
+  box-shadow: inset 10px 6px 15px 1px rgba(0,0,0,0.5);
 }
+
 .by {
   font-size: .6rem;;
 }
+
 .book-title {
   word-break: break-word;
   color: #000;
@@ -756,7 +770,7 @@ h3 {
 }
 .book-author {
   text-shadow: 1px 1px rgba(50, 50, 50, 0.3);
-  padding: 0 15px;
+  padding: 5px 15px;
 }
 .delete {
   font-size: xx-small;
@@ -881,6 +895,12 @@ h3 {
   }
   p {
     font-size: .8rem;
+  }
+  .logo, a {
+    font-size: .75em;
+  }
+  .link-container {
+    font-size: .75em;
   }
 }
 
