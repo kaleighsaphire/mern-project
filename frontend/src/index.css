@@ -77,6 +77,7 @@ h2,
 h3 {
   font-weight: 700;
   margin-bottom: 10px;
+  text-shadow: 1px 1px rgba(225, 224, 224, 0.9);
 }
 
 /*************************/
@@ -93,10 +94,11 @@ h3 {
   text-align: center;
 }
 .link-container {
-  background-color: rgb(92, 144, 128);
   margin: 20px 15%;
   border-radius: 10px;
-  box-shadow: 4px 6px 6px 2px rgb(128, 128, 128, .3);
+  border: 4px double rgb(47, 74, 65);
+  background-color: rgb(92, 144, 128);
+  box-shadow: inset 6px 3px 20px 1px rgba(0,0,0,0.5);
 }
 
 /*************************/
@@ -106,13 +108,12 @@ h3 {
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px;
-  border-radius: 10px;
   margin-bottom: 60px;
-  background-image: url(./books.jpg);
-  background-blend-mode: exclusion;
-  background-color: rgb(43, 109, 89);
+  border-radius: 10px;
+  border: 6px double rgb(120, 40, 77);
+  background-color: rgba(172, 56, 110, .8);
+  box-shadow: inset 10px 10px 15px 1px rgba(0,0,0,0.5);
 }
-
 .header ul {
   display: flex;
   align-items: center;
@@ -134,6 +135,15 @@ h3 {
 
 .header ul li a svg {
   margin-right: 5px;
+}
+.logo>a  {
+  color: rgb(0, 0, 0);
+  padding: 8px;
+  border-radius: 5px;
+  border: 4px double rgb(114, 113, 115);
+  background-color: rgb(253, 253, 253);
+  box-shadow: inset 3px 2px 15px 1px rgba(0,0,0,0.3);
+  cursor: pointer;
 }
 /*************************/
 /****************Headings*/
@@ -174,12 +184,13 @@ h3 {
 /*************************/
 /******************Footer*/
 .footer {
-  margin-top: auto;
   font-size: .75rem;
-  color: rgb(190, 229, 217);
-  background-color: rgb(9, 110, 80, .5);
   text-align: center;
+  margin-top: auto;
   border-radius: 5px;
+  color: rgb(190, 229, 217);
+  border: 3px double rgb(9, 110, 80);
+  background-color: rgb(9, 110, 80, .5);
 }
 
 /*************************/
@@ -296,6 +307,7 @@ h3 {
 .open-book:hover .page5 {
   transform: rotateY(-130deg) scale(1.1);
   box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  box-shadow: inset 0px 0px 8px 1px rgba(0,0,0,0.2);
   cursor: url('./pencil.png'), auto;
 }
 
@@ -312,57 +324,57 @@ h3 {
 /*************************/
 /**************Book Stack*/
 
-.bg{
-  background-color: rgb(61, 111, 96);
-  padding: 31px 0;
-  border-radius: 10px;
-  box-shadow: 4px 6px 6px 2px rgb(128, 128, 128, .3);
+.bg {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: -0px;
+  padding: 31px 0;
+  border-radius: 10px;
+  background-color: rgb(61, 111, 96);
+  box-shadow: inset 6px 3px 20px 1px rgba(0,0,0,0.5);
 }
 
-.book1{
+.book1 {
   position: relative;
   height:15px;
   width:70px;
-  border: 2px solid rgb(241, 178, 83);
   margin-right: 200px;
+  border: 2px solid rgb(241, 178, 83);
   border-radius: 5px 0 0 5px;
   border-right-style: none;
-  background: #fffff0;  
+  background: rgb(255, 255, 240);  
   cursor: url('./book.png'), auto;
 }
 
-.bookCut{ 
-  background: rgb(61, 111, 96);
-  margin: 0 0 0 98%;
+.bookCut { 
   width: 2px;
   height: 11px;
+  margin: 0 0 0 98%;
+  background: rgb(61, 111, 96);
 }
 
-.ribbon1{
+.ribbon1 {
+  position: absolute;
+  margin: 6px 0 0 5px;
   height:12px;
   width:10px;
   background: rgb(105, 106, 189);
-  position: absolute;
-  margin: 6px 0 0 5px;
 }
 
-.book2{
+.book2 {
   position: relative;
   height:20px;
   width:63px;
   margin-right: 200px;
-  background: rgb(200, 146, 224);
   border-radius: 1px;   
+  background: rgb(207, 158, 228);
   box-shadow: inset 5px -2px 14px 1px rgba(0,0,0,0.5);
   cursor: url('./book.png'), auto;
 }
 
-.ribbonCut1{
+.ribbonCut1 {
   position: absolute;
   margin: 2px 0 0 1px;
   border-left: 0px solid rgb(105, 106, 189);
@@ -378,7 +390,7 @@ h3 {
 	border-top: 6px solid rgb(105, 106, 189);
 }
 
-.ribbonCut3{
+.ribbonCut3 {
   position: absolute;
   margin: 0 0 0 1px;
   height: 2px;
@@ -387,87 +399,89 @@ h3 {
 }
 
 .book2:before,
-.book2:after{
+.book2:after {
   content: "";
   position: absolute;
 }
 
-.book2:before{
+.book2:before {
   height: 20px;
   width: 30px;
   left: 6px;
-  border-left: 10px double #fff;
-  border-right: 10px double #fff;
+  border-left: 10px double rgb(125, 90, 140);
+  border-right: 10px double rgb(125, 90, 140);
 }
 
-.book2:after{
-  background: white;
-  margin: 5px 0 0 -8px;
+.book2:after {
   width: 14px;
   height: 10px;
+  margin: 5px 0 0 -8px;
+  background: rgb(255, 255, 255);
+  box-shadow: inset 1px -1px 2px 1px rgba(0,0,0,0.2);
 }
 
-.book3{
+.book3 {
   position: relative;
   height:15px;
   width:70px;
-  border: 2.5px solid rgb(106, 198, 194);
   margin-right: 200px;
+  border: 2.5px solid rgb(106, 198, 194);
   border-radius: 0 5px 5px 0;
   border-left-style: none;
-  background: #fffff0;
+  background: rgb(255, 255, 240);
   cursor: url('./book.png'), auto;
   
 }
 
-.bookCut3{ 
-  background:rgb(61, 111, 96);
+.bookCut3 { 
   width: 2.5px;
   height: 10px;
+  background:rgb(61, 111, 96);
 }
 
-.ribbon3{
+.ribbon3 {
+  position: absolute;
   height:12px;
   width:10px;
-  position: absolute;
-  background: rgb(128, 128, 141);
   margin: 5px 0 0 50px;
+  background: rgb(128, 128, 141);
 }
 
-.book4{
+.book4 {
   position: relative;
   height:17px;
   width:80px;
   margin-right: 200px;
-  background: rgb(137, 139, 214);
   border-radius: 1px; 
+  background: rgb(165, 168, 230);
   box-shadow: inset 3px -2px 8px 1px rgba(0,0,0,0.5);
   cursor: url('./book.png'), auto;
 }
 
 .book4:before,
-.book4:after{
+.book4:after {
   position: absolute;
   content: "";
 }
 
-.book4:before{
+/* .book4:before {
   height: 17px;
   width: 48px;
   left: 6px;
   border-left: 10px double #fff;
   border-right: 10px double #fff;
-}
+} */
 
-.book4:after{
-   background: white;
-  margin: 4px 0 0 -10px;
+.book4:after {
   width: 20px;
   height: 9px;
+  margin: 4px 0 0 -10px;
   border-radius: 50%;
+  background: white;
+  box-shadow: inset 1px -1px 2px 1px rgba(0,0,0,0.4);
 }
 
-.ribbonCut4{
+.ribbonCut4 {
   position: absolute;
   margin: 2.5px 0 0 63px;
   border-left: 0px solid rgb(128, 128, 141);
@@ -475,7 +489,7 @@ h3 {
 	border-top: 6px solid rgb(128, 128, 141);
 }
 
-.ribbonCut5{
+.ribbonCut5 {
   position: absolute;
   margin: 2.5px 0 0 68px;
   border-left: 5px solid transparent;
@@ -483,7 +497,7 @@ h3 {
 	border-top: 6px solid rgb(128, 128, 141);
 }
 
-.ribbonCut6{
+.ribbonCut6 {
   position: absolute;
   margin: 0 0 0 63px;
   height: 2.5px;
@@ -491,24 +505,24 @@ h3 {
   background: rgb(128, 128, 141);
 }
 
-.book5{
+.book5 {
   position: relative;
   height:20px;
   width:73px;
   margin-right: 200px;
-  background: rgb(140, 205, 166);
   border-radius: 1px; 
+  background: rgb(140, 205, 166);
   box-shadow: inset 3px 2px 8px 1px rgba(0,0,0,0.5); 
   cursor: url('./book.png'), auto;
 }
 
 .book5:before,
-.book5:after{
+.book5:after {
   position: absolute;
   content: '';
 }
 
-.book5:before{
+.book5:before {
   height: 20px;
   width: 40px;
   left: 6px;
@@ -516,75 +530,75 @@ h3 {
   border-right: 10px double #fff;
 }
 
-.book5:after{
-  background: white;
-  margin: 6px 0 0 -8px;
+.book5:after {
   width: 15px;
   height: 10px;
+  margin: 6px 0 0 -8px;
+  background: white;
+  box-shadow: inset 1px -1px 2px 1px rgba(0,0,0,0.1);
 }
 
-.book6{
+.book6 {
   position: relative;
   height:15px;
   width:82px;
-  border: 2.5px solid rgb(230, 216, 130);
   margin-right: 200px;
+  border: 2.5px solid rgb(230, 216, 130);
   border-radius: 1px 5px 5px 1px;
   border-left-style: none;
   background: rgb(255, 255, 240);
-  cursor: url('./book.png'), auto;
-  
+  cursor: url('./book.png'), auto;  
 }
 
-
-.bookCut6{ 
-  background: rgb(61, 111, 96);
+.bookCut6 { 
   width: 2.5px;
   height: 10px;
+  background: rgb(61, 111, 96);
 }
 
-.ribbon6{
+.ribbon6 {
+  position: absolute;
   height:12px;
   width:10px;
-  position: absolute;
-  background: rgb(223, 142, 209);
   margin: 7px 0 0 50px;
+  background: rgb(223, 142, 209);
 }
 
-.book7{
+.book7 {
   position: relative;
   height:20px;
   width:100px;
   margin-right: 200px;
   margin-bottom: 1.5px;
-  background: rgb(207, 102, 102);
   border-radius: 1px; 
+  background: rgb(207, 102, 102);
   box-shadow: inset 3px -2px 6px 1px rgba(0,0,0,0.5);
   cursor: url('./book.png'), auto;
 }
 
 .book7:before,
-.book7:after{
+.book7:after {
   position: absolute;
   content: "";
 }
 
-.book7:before{
+.book7:before {
   height: 20px;
   width: 47px;
   left: 5px;
-  border-left: 10px double #fff;
+  border-left: 10px double rgb(255, 255, 255);
 }
 
-.book7:after{
-   background: white;
+.book7:after {
+  background: rgb(255, 255, 255);
   margin: 4px 0 0 35px;
   width: 11px;
   height: 11px;
   border-radius: 6px;
+  box-shadow: inset 1px -1px 2px 1px rgba(0,0,0,0.1);
 }
 
-.ribbonCut7{
+.ribbonCut7 {
   position: absolute;
   margin: 2px 0 0 58px;
   border-left: 0px solid rgb(223, 142, 209);
@@ -592,7 +606,7 @@ h3 {
 	border-top: 6px solid rgb(223, 142, 209);
 }
 
-.ribbonCut8{
+.ribbonCut8 {
   position: absolute;
   margin: 2px 0 0 63px;
   border-left: 5px solid transparent;
@@ -600,11 +614,11 @@ h3 {
 	border-top: 6px solid rgb(223, 142, 209);
 }
 
-.ribbonCut9{
+.ribbonCut9 {
   position: absolute;
-  margin: 0 0 0 58px;
   height: 2.5px;
   width: 10px;
+  margin: 0 0 0 58px;
   background: rgb(223, 142, 209);
 }
 
