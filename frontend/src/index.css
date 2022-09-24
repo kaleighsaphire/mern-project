@@ -92,10 +92,9 @@ h3 {
   padding: 0 15px;
   text-align: center;
 }
-.page-links {
-  background-color: rgba(14, 167, 121, 0.3);
-  margin: 0 35%;
-  padding: 20px 10px;
+.link-container {
+  background-color: rgb(92, 144, 128);
+  margin: 20px 15%;
   border-radius: 10px;
   box-shadow: 4px 6px 6px 2px rgb(128, 128, 128, .3);
 }
@@ -147,7 +146,31 @@ h3 {
 .heading p {
   color: rgb(23, 138, 88, .5);
 }
+.blog-dashboard {
+ position: relative;
+}
+.blog-dashboard>h2 {
+  position: absolute;
+  text-shadow: 1px 1px rgba(33, 33, 33, 0.4);
+  font-size: 2.5em;
+  margin: -90px 0 0 35px;
+}
+.blog-dashboard>h2:hover {
+  transform: scale(0.98);
+}
 
+.library-dashboard {
+  position: relative;
+ }
+ .library-dashboard>h2{
+   position: absolute;
+   text-shadow: 1px 1px rgba(33, 33, 33, 0.5);
+   font-size: 2.5em;
+   margin: 35px 0 0 50px;
+ }
+ .library-dashboard>h2:hover {
+  transform: scale(0.98);
+}
 /*************************/
 /******************Footer*/
 .footer {
@@ -163,8 +186,9 @@ h3 {
 /***************Open Book*/
 
 .journal-link {
-  margin: 0 50%;
   position: relative;
+  margin: 0 50%;
+  padding: 20px 10px;
 }
 
 .journal {
@@ -172,7 +196,6 @@ h3 {
   font-size: 13px;
   line-height: 1.2em;
   margin: 30% 0;
-  text-transform: uppercase;
   text-shadow: 1px 1px rgb(85, 85, 85, .5);
 }
 .book-text {
@@ -186,10 +209,11 @@ h3 {
   font-size: 13px;
 }
 
-.book1 {
+.open-book {
   transform-style: preserve-3d;
   position: relative;
   height: 150px;
+  margin-left: -150px;
   cursor: pointer;
   backface-visibility: visible;
 }
@@ -208,8 +232,8 @@ h3 {
   border-top: 1px solid rgb(85, 82, 82);;
   border-bottom: 3px solid rgb(239, 239, 239);
   border-right: 5px inset rgb(250, 250, 250);
-  border-radius: 3px 3px 3px 3px;
-  box-shadow: 6px 8px 9px 4px rgb(128, 128, 128, .3);
+  border-radius: 2px 3px 3px 2px;
+  box-shadow: inset 2px 2px 6px 1px rgba(0,0,0,0.5);
 }
 .front, .back {
   background: rgba(172, 56, 110, 0.7);
@@ -237,7 +261,7 @@ h3 {
   background: rgb(250, 250, 250);
 }
 
-.book1:hover .front {
+.open-book:hover .front {
   transform: rotateY(-160deg) scale(1.1);
   box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
   border-right: none;
@@ -245,45 +269,343 @@ h3 {
   cursor: url('./pencil.png'), auto;
 }
 
-.book1:hover .page1 {
+.open-book:hover .page1 {
   transform: rotateY(-150deg) scale(1.1);
   box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
   cursor: url('./pencil.png'), auto;
 }
 
-.book1:hover .page2 {
+.open-book:hover .page2 {
   transform: rotateY(-30deg) scale(1.1);
   box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
   cursor: url('./pencil.png'), auto;
 }
 
-.book1:hover .page3 {
+.open-book:hover .page3 {
   transform: rotateY(-140deg) scale(1.1);
   box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
   cursor: url('./pencil.png'), auto;
 }
 
-.book1:hover .page4 {
+.open-book:hover .page4 {
   transform: rotateY(-40deg) scale(1.1);
   box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
   cursor: url('./pencil.png'), auto;
 }
 
-.book1:hover .page5 {
+.open-book:hover .page5 {
   transform: rotateY(-130deg) scale(1.1);
   box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
   cursor: url('./pencil.png'), auto;
 }
 
-.book1:hover .page6 {
+.open-book:hover .page6 {
   transform: rotateY(-50deg) scale(1.1);
   box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
   cursor: url('./pencil.png'), auto;
 }
 
-.book1:hover .back {
+.open-book:hover .back {
   transform: rotateY(-20deg) scale(1.1);
   cursor: url('./pencil.png'), auto;
+}
+/*************************/
+/**************Book Stack*/
+
+.bg{
+  background-color: rgb(61, 111, 96);
+  padding: 31px 0;
+  border-radius: 10px;
+  box-shadow: 4px 6px 6px 2px rgb(128, 128, 128, .3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -0px;
+}
+
+.book1{
+  position: relative;
+  height:15px;
+  width:70px;
+  border: 2px solid rgb(241, 178, 83);
+  margin-right: 200px;
+  border-radius: 5px 0 0 5px;
+  border-right-style: none;
+  background: #fffff0;  
+  cursor: url('./book.png'), auto;
+}
+
+.bookCut{ 
+  background: rgb(61, 111, 96);
+  margin: 0 0 0 98%;
+  width: 2px;
+  height: 11px;
+}
+
+.ribbon1{
+  height:12px;
+  width:10px;
+  background: rgb(105, 106, 189);
+  position: absolute;
+  margin: 6px 0 0 5px;
+}
+
+.book2{
+  position: relative;
+  height:20px;
+  width:63px;
+  margin-right: 200px;
+  background: rgb(200, 146, 224);
+  border-radius: 1px;   
+  box-shadow: inset 5px -2px 14px 1px rgba(0,0,0,0.5);
+  cursor: url('./book.png'), auto;
+}
+
+.ribbonCut1{
+  position: absolute;
+  margin: 2px 0 0 1px;
+  border-left: 0px solid rgb(105, 106, 189);
+	border-right: 5px solid transparent;
+	border-top: 6px solid rgb(105, 106, 189);
+}
+
+.ribbonCut2{
+  position: absolute;
+  margin: 2px 0 0 6px;
+  border-left: 5px solid transparent;
+	border-right: 0px solid rgb(105, 106, 189);
+	border-top: 6px solid rgb(105, 106, 189);
+}
+
+.ribbonCut3{
+  position: absolute;
+  margin: 0 0 0 1px;
+  height: 2px;
+  width: 10px;
+  background: rgb(105, 106, 189);
+}
+
+.book2:before,
+.book2:after{
+  content: "";
+  position: absolute;
+}
+
+.book2:before{
+  height: 20px;
+  width: 30px;
+  left: 6px;
+  border-left: 10px double #fff;
+  border-right: 10px double #fff;
+}
+
+.book2:after{
+  background: white;
+  margin: 5px 0 0 -8px;
+  width: 14px;
+  height: 10px;
+}
+
+.book3{
+  position: relative;
+  height:15px;
+  width:70px;
+  border: 2.5px solid rgb(106, 198, 194);
+  margin-right: 200px;
+  border-radius: 0 5px 5px 0;
+  border-left-style: none;
+  background: #fffff0;
+  cursor: url('./book.png'), auto;
+  
+}
+
+.bookCut3{ 
+  background:rgb(61, 111, 96);
+  width: 2.5px;
+  height: 10px;
+}
+
+.ribbon3{
+  height:12px;
+  width:10px;
+  position: absolute;
+  background: rgb(128, 128, 141);
+  margin: 5px 0 0 50px;
+}
+
+.book4{
+  position: relative;
+  height:17px;
+  width:80px;
+  margin-right: 200px;
+  background: rgb(137, 139, 214);
+  border-radius: 1px; 
+  box-shadow: inset 3px -2px 8px 1px rgba(0,0,0,0.5);
+  cursor: url('./book.png'), auto;
+}
+
+.book4:before,
+.book4:after{
+  position: absolute;
+  content: "";
+}
+
+.book4:before{
+  height: 17px;
+  width: 48px;
+  left: 6px;
+  border-left: 10px double #fff;
+  border-right: 10px double #fff;
+}
+
+.book4:after{
+   background: white;
+  margin: 4px 0 0 -10px;
+  width: 20px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.ribbonCut4{
+  position: absolute;
+  margin: 2.5px 0 0 63px;
+  border-left: 0px solid rgb(128, 128, 141);
+	border-right: 5px solid transparent;
+	border-top: 6px solid rgb(128, 128, 141);
+}
+
+.ribbonCut5{
+  position: absolute;
+  margin: 2.5px 0 0 68px;
+  border-left: 5px solid transparent;
+	border-right: 0px solid rgb(128, 128, 141);
+	border-top: 6px solid rgb(128, 128, 141);
+}
+
+.ribbonCut6{
+  position: absolute;
+  margin: 0 0 0 63px;
+  height: 2.5px;
+  width: 10px;
+  background: rgb(128, 128, 141);
+}
+
+.book5{
+  position: relative;
+  height:20px;
+  width:73px;
+  margin-right: 200px;
+  background: rgb(140, 205, 166);
+  border-radius: 1px; 
+  box-shadow: inset 3px 2px 8px 1px rgba(0,0,0,0.5); 
+  cursor: url('./book.png'), auto;
+}
+
+.book5:before,
+.book5:after{
+  position: absolute;
+  content: '';
+}
+
+.book5:before{
+  height: 20px;
+  width: 40px;
+  left: 6px;
+  border-left: 10px double #fff;
+  border-right: 10px double #fff;
+}
+
+.book5:after{
+  background: white;
+  margin: 6px 0 0 -8px;
+  width: 15px;
+  height: 10px;
+}
+
+.book6{
+  position: relative;
+  height:15px;
+  width:82px;
+  border: 2.5px solid rgb(230, 216, 130);
+  margin-right: 200px;
+  border-radius: 1px 5px 5px 1px;
+  border-left-style: none;
+  background: rgb(255, 255, 240);
+  cursor: url('./book.png'), auto;
+  
+}
+
+
+.bookCut6{ 
+  background: rgb(61, 111, 96);
+  width: 2.5px;
+  height: 10px;
+}
+
+.ribbon6{
+  height:12px;
+  width:10px;
+  position: absolute;
+  background: rgb(223, 142, 209);
+  margin: 7px 0 0 50px;
+}
+
+.book7{
+  position: relative;
+  height:20px;
+  width:100px;
+  margin-right: 200px;
+  margin-bottom: 1.5px;
+  background: rgb(207, 102, 102);
+  border-radius: 1px; 
+  box-shadow: inset 3px -2px 6px 1px rgba(0,0,0,0.5);
+  cursor: url('./book.png'), auto;
+}
+
+.book7:before,
+.book7:after{
+  position: absolute;
+  content: "";
+}
+
+.book7:before{
+  height: 20px;
+  width: 47px;
+  left: 5px;
+  border-left: 10px double #fff;
+}
+
+.book7:after{
+   background: white;
+  margin: 4px 0 0 35px;
+  width: 11px;
+  height: 11px;
+  border-radius: 6px;
+}
+
+.ribbonCut7{
+  position: absolute;
+  margin: 2px 0 0 58px;
+  border-left: 0px solid rgb(223, 142, 209);
+	border-right: 5px solid transparent;
+	border-top: 6px solid rgb(223, 142, 209);
+}
+
+.ribbonCut8{
+  position: absolute;
+  margin: 2px 0 0 63px;
+  border-left: 5px solid transparent;
+	border-right: 0px solid rgb(223, 142, 209);
+	border-top: 6px solid rgb(223, 142, 209);
+}
+
+.ribbonCut9{
+  position: absolute;
+  margin: 0 0 0 58px;
+  height: 2.5px;
+  width: 10px;
+  background: rgb(223, 142, 209);
 }
 
 /*************************/
@@ -407,7 +729,7 @@ h3 {
   border-bottom: 3px solid rgb(234, 234, 234);
   border-right: 5px inset rgb(208, 208, 208);
   border-radius: 8px 3px 3px 8px;
-  box-shadow: 6px 8px 9px 4px rgb(128, 128, 128, .3);
+  box-shadow: 2px 6px 6px 2px rgb(128, 128, 128, .3);
 }
 .by {
   font-size: .6rem;;
@@ -415,14 +737,16 @@ h3 {
 .book-title {
   word-break: break-word;
   color: #000;
+  text-shadow: 1px 1px rgba(228, 228, 228, 0.3);
   padding: 15px 6px 0 10px;
 }
 .book-author {
+  text-shadow: 1px 1px rgba(50, 50, 50, 0.3);
   padding: 0 15px;
 }
 .delete {
   font-size: xx-small;
-  color: rgb(177, 173, 173);
+  color: rgb(189, 185, 185);
   cursor: pointer;
   position: absolute;
   bottom: 4px;

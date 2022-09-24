@@ -44,7 +44,7 @@ function BookForm() {
                     id="genre" 
                     value={genre} 
                     onChange={(e)=>setGenre(e.target.value)}>
-                        <option>Please select a genre</option>
+                        <option>Select a genre</option>
                         <option value="Biography">Biography</option>
                         <option value="Fantasy">Fantasy</option>
                         <option value="History">History</option>
