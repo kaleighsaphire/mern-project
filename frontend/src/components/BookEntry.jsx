@@ -1,10 +1,10 @@
 import {useDispatch} from 'react-redux'
 import {FaRegTrashAlt} from 'react-icons/fa'
-import {deleteBook} from '../features/books/bookSlice'
+import {deleteBook, updateBook} from '../features/books/bookSlice'
 
 const BookEntry = ({book}) => {
     const dispatch = useDispatch()
-
+   
   return (
     <>
       <div className="book-container">
@@ -14,6 +14,7 @@ const BookEntry = ({book}) => {
             <span className="by">By</span>
             <h5 className="book-author">{book.author}</h5>
           </div>
+          {/* <button onClick={()=> dispatch(updateBook({id:book._id, bookData: {title:"New Title"}}))}className="edit">Edit</button> */}
           <button onClick={()=> dispatch(deleteBook(book._id))}className="delete"><FaRegTrashAlt /></button>
         </div>
       </div>
