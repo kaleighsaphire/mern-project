@@ -51,4 +51,6 @@ bcryptjs, colors, dotenv, express, express-async-handler, jsonwebtoken, nodemon,
 <li> Use command npm run dev to run frontend and baackend at the same time.</li>
 </ol>
 
+<h3 align="center">Loading Animation</h3>
+<p align="center"><a href="https://imgur.com/9WUeDLN"><img src="https://i.imgur.com/9WUeDLN.gif" title="source: imgur.com" /></a></p>
 
