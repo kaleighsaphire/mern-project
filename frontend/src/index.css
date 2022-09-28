@@ -98,7 +98,7 @@ h3 {
   border-radius: 10px;
   border: 4px double rgb(244, 247, 246);
   background-color: rgb(157, 212, 197);
-  box-shadow: inset 4px 2px 15px 1px rgba(0,0,0,0.5);
+  box-shadow: inset 4px 2px 25px 1px rgba(116, 115, 115, 0.5);
 }
 
 /*************************/
@@ -110,8 +110,8 @@ h3 {
   padding: 20px 20px;
   margin-bottom: 60px;
   border-radius: 10px;
-  border: 6px double rgb(193, 75, 130);
-  background-color: rgba(172, 56, 110, .7);
+  border: 6px double rgb(164, 114, 193);
+  background-color: rgba(171, 119, 221, 0.6);
   box-shadow: inset 3px 2px 15px 1px rgba(139, 139, 139, 0.5);
 }
 .header ul {
@@ -130,7 +130,7 @@ h3 {
 }
 
 .header ul li a:hover {
-  color: rgb(10, 221, 158);
+  color: rgb(105, 19, 127);
 }
 
 .header ul li a svg {
@@ -142,9 +142,10 @@ h3 {
   border-radius: 5px;
   border: 3px double rgb(7, 172, 123);
   background: rgba(80, 146, 126, 0.7);
-  box-shadow: inset 1px 2px 15px 1px rgba(61, 61, 61, 0.3);
+  box-shadow: inset 1px 2px 15px 1px rgba(61, 61, 61, 0.1);
   cursor: pointer;
 }
+
 .logo:hover {
   transform: scale(0.98);
 }
@@ -188,19 +189,20 @@ h3 {
 /******************Footer*/
 .footer {
   margin-top: auto;
-  margin-bottom: 2px;
-  padding: 2px 0;;
+  margin-bottom: 3px;
+  padding: 4px 0;;
   border-radius: 5px;
-  border: 3px double rgb(9, 110, 80, .3);
-  background-color: rgb(9, 110, 80, .5);
+  border: 3px double rgba(171, 119, 221, 0.9);
+  background-color: rgba(171, 119, 221, 0.6);
 }
 .footer>a {
-  font-size: .75rem;
-  color: rgb(253, 253, 253);
-  padding: 1px 20px;
-  border: 1px solid rgb(9, 110, 80, .5);
+  font-size: .7rem;
+  color: rgb(105, 19, 127);
+  padding: 0 20px;
+  padding-top: -5px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 5px;
-  background-color: rgba(241, 244, 243, 0.3);
+  background-color: rgba(241, 244, 243, 0.2);
 }
 
 /*************************/
@@ -257,7 +259,7 @@ h3 {
   box-shadow: inset 1px 1px 6px 1px rgba(0,0,0,0.5);
 }
 .front, .back {
-  background: rgba(172, 56, 110, 0.7);
+  background: rgba(146, 69, 165, 0.7);
 }
 
 .front, .page1, .page3, .page5 {
@@ -343,7 +345,7 @@ h3 {
   padding: 31px 0;
   border-radius: 10px;
   background-color: rgb(61, 111, 96);
-  box-shadow: inset 6px 3px 20px 1px rgba(0,0,0,0.5);
+  box-shadow: inset 6px 3px 20px 1px rgba(214, 213, 213, 0.5);
 }
 
 .book1 {
@@ -464,7 +466,7 @@ h3 {
   margin-right: 200px;
   border-radius: 1px; 
   background: rgb(165, 168, 230);
-  box-shadow: inset 3px -2px 8px 1px rgba(0,0,0,0.5);
+  box-shadow: inset 3px -2px 8px 1px rgba(84, 83, 83, 0.5);
   cursor: url('./book.png'), auto;
 }
 
@@ -473,14 +475,6 @@ h3 {
   position: absolute;
   content: "";
 }
-
-/* .book4:before {
-  height: 17px;
-  width: 48px;
-  left: 6px;
-  border-left: 10px double #fff;
-  border-right: 10px double #fff;
-} */
 
 .book4:after {
   width: 20px;
@@ -641,7 +635,7 @@ h3 {
 }
 
 .log {
-  background-color: rgba(237, 161, 197, 0.3);;
+  background-color: rgba(160, 111, 203, 0.3);;
   margin: 10px 0;
   padding: 20px 0 10px;
   border-radius: 10px;
@@ -689,7 +683,7 @@ h3 {
   border: 1px solid rgba(14, 167, 121);
   border-radius: 5px;
   background-color: rgba(91, 210, 174, 0.1);
-  caret-color: rgb(220, 11, 129);
+  caret-color: rgb(217, 128, 240);
 }
 
 .form-group label {
@@ -732,7 +726,7 @@ h3 {
 }
 
 .btn:hover {
-  background-color: rgba(172, 56, 110, .6);
+  background-color: rgba(155, 110, 182, 0.9);
   transform: scale(0.98);
 }
 
@@ -753,8 +747,8 @@ h3 {
   color: rgb(255, 254, 254);
   border: 3px solid rgb(121, 120, 120);
   border-top: 1px solid rgb(98, 96, 96);;
-  border-bottom: 3px solid rgb(224, 222, 222);
-  border-right: 4px inset rgb(247, 247, 246);
+  border-bottom: 3px solid rgb(204, 203, 203);
+  border-right: 4px inset rgb(233, 233, 223);
   border-radius: 8px 5px 3px 8px;
   /* box-shadow: 2px 6px 6px 2px rgb(128, 128, 128, .3); */
   box-shadow: inset 10px 6px 15px 1px rgba(0,0,0,0.5);
