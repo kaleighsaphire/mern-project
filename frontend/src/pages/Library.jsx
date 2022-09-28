@@ -1,14 +1,16 @@
-import {useEffect} from 'react'
+import {useEffect, useState} from 'react'
 import {useNavigate} from 'react-router-dom'
 import {useSelector, useDispatch} from 'react-redux'
 import {getBooks, reset} from '../features/books/bookSlice'
 import BookForm from '../components/BookForm'
 import BookEntry from '../components/BookEntry'
 import Spinner from '../components/Spinner'
+import Heading from '../components/Heading'
 
-function Library() {
+function Library({showAdd}) {
     const navigate = useNavigate()
     const dispatch = useDispatch()
+    const [showBookForm, setShowBookForm] = useState(false)
 
     const {user} = useSelector((state) => state.auth)
     const {books, isLoading, isError, message} = useSelector((state) => state.books)
@@ -36,7 +38,11 @@ function Library() {
 
   return (
     <>
-    <BookForm />
+    <Heading
+        onAdd={() => setShowBookForm(!showBookForm)}
+        showAdd={showBookForm}
+      />
+    {showBookForm && <BookForm onAdd={BookForm} />}
     <section className="book-content">
       {books.length > 0 ? (
         <div className="books">

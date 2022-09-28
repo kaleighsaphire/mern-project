@@ -1,14 +1,16 @@
-import {useEffect} from 'react'
+import {useEffect, useState} from 'react'
 import {useNavigate} from 'react-router-dom'
 import {useSelector, useDispatch} from 'react-redux'
 import {getLogs, reset} from '../features/logs/logSlice'
 import LogForm from '../components/LogForm'
 import LogEntry from '../components/LogEntry'
 import Spinner from '../components/Spinner'
+import Heading from '../components/Heading'
 
 function Blog() {
   const navigate = useNavigate()
   const dispatch = useDispatch()
+  const [showLogForm, setShowLogForm] = useState(false)
 
   const {user} = useSelector((state) => state.auth)
   const {logs, isLoading, isError, message} = useSelector((state) => state.logs)
@@ -36,11 +38,11 @@ function Blog() {
 
   return (
     <>
-    <section className="heading">
-      <h1>What have you been reading?</h1>
-    </section>
-
-    <LogForm />
+    <Heading
+        onAdd={() => setShowLogForm(!showLogForm)}
+        showAdd={showLogForm}
+      />
+    {showLogForm && <LogForm onAdd={LogForm} />}
 
     <section className="content">
       {logs.length > 0 ? (
