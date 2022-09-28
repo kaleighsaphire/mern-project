@@ -731,7 +731,7 @@ h3 {
 }
 
 .heading>.btn{
-  margin-left: auto;
+  margin: -30px 0 10px auto;
 }
 
 /*************************/

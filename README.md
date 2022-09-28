@@ -16,12 +16,12 @@ All visuals and animations were created with 100% CSS styling.
 <li>On the Journal page, add/store/delete a journal entry.</li>
 <li>On Library page, add/store/delete a book with its title, author and genre.</li>
 <li>The selected book genres are represented with colour coding on the books.</li>
+<li>Show/hide form entry components.</li>
 </ul>
 
 <h2>Future Features</h2>
 <ul>
 <li>Edit a journal entry.</li>
-<li>Modals for adding/editing.</li>
 <li>Rating feature on journal entries.</li>
 <li>Sort journal entries by date/book title/author/rating.</li>
 <li>Filter/Sort Library by genre/title/author.</li>

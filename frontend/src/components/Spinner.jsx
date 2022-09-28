@@ -1,10 +1,10 @@
 function Spinner() {
   return (
-    <div class="tea-container">
-      <div class="steam" id="steam1"></div>
-      <div class="steam" id="steam2"></div>
-      <div class="steam" id="steam3"></div>
-      <div class="steam" id="steam4"></div>
+    <div className="tea-container">
+      <div className="steam" id="steam1"></div>
+      <div className="steam" id="steam2"></div>
+      <div className="steam" id="steam3"></div>
+      <div className="steam" id="steam4"></div>
       <div id="cup">
         <div id="cup-body"></div>
         <div id="cup-handle"></div>
