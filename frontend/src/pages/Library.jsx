@@ -48,7 +48,7 @@ function Library({showAdd}) {
         <div className="books">
           {books.filter((book) => book.own === true).map((book) => (
             <BookEntry key={book._id} book={book} />
-          ))}
+          )).reverse()}
         </div>
       ) : (
       <h3>Nothing in Library</h3>

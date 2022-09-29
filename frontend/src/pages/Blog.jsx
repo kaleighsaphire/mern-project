@@ -49,7 +49,7 @@ function Blog() {
         <div className="logs">
           {logs.map((log) => (
             <LogEntry key={log._id} log={log} />
-          ))}
+          )).reverse()}
         </div>
       ) : (
       <h3>No log entries</h3>

@@ -634,15 +634,16 @@ h3 {
 }
 
 .log {
-  background-color: rgb(157, 212, 197, .5);
+  background-color: rgb(157, 212, 197, .2);
   margin: 10px 0;
-  padding: 20px 0 10px;
+  padding: 30px 20px 25px;
   border-radius: 10px;
   position: relative;
 }
 
 .log >.delete-log {
   position: absolute;
+  font-size: .75rem;
   bottom: 10px;
   right: 15px;
   cursor: pointer;
@@ -659,6 +660,13 @@ h3 {
   position: absolute;
   top: 10px;
   left: 10px;
+}
+.star-rating {
+  position: absolute;
+  font-size: .75rem;
+  color: rgb(177, 108, 217);
+  top: 10px;
+  right: 15px;
 }
 /*************************/
 /****************Log Form*/
@@ -708,20 +716,6 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.btn svg {
-  margin-right: 8px;
-}
-
-.btn-reverse {
-  background: #fff;
-  color: #000;
-}
-
-.btn-block {
-  width: 100%;
-  margin-bottom: 20px;
 }
 
 .btn:hover {

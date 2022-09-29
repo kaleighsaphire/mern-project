@@ -43,12 +43,12 @@ function LogForm() {
                     id="rating" 
                     value={rating} 
                     onChange={(e)=>setRating(e.target.value)}>
-                        <option>Select a star rating for book</option>
-                        <option value="1">1 - Would not recommend</option>
-                        <option value="2">2 - Not for me</option>
-                        <option value="3">3 - Decent</option>
-                        <option value="4">4 - Mostly enjoyed</option>
-                        <option value="5">5 - This one is a favourite</option>
+                        <option>Rate Book</option>
+                        <option value="1">1 - Horrible</option>
+                        <option value="2">2 - Bad</option>
+                        <option value="3">3 - Average</option>
+                        <option value="4">4 - Good</option>
+                        <option value="5">5 - Fantastic</option>
                 </select>
             </div>
             <div className="form-group">

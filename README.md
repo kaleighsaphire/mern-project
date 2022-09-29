@@ -19,12 +19,12 @@ All visuals and animations were created with 100% CSS styling.
 <li>Wish list page for books you would like to purchase.</li>
 <li>Show/hide form entry components.</li>
 <li>Book created on Library page, own:true. Book created on Wish List page, own:false.</li>
+<li>Rating feature on journal entries.</li>
 </ul>
 
 <h2>Future Features</h2>
 <ul>
 <li>Edit a journal entry.</li>
-<li>Rating feature on journal entries.</li>
 <li>Sort journal entries by date/book title/author/rating.</li>
 <li>Filter/Sort Library by genre/title/author.</li>
 <li>Toggle indication of whether a book has been read or not.</li>
