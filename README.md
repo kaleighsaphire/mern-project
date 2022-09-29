@@ -16,7 +16,9 @@ All visuals and animations were created with 100% CSS styling.
 <li>On the Journal page, add/store/delete a journal entry.</li>
 <li>On Library page, add/store/delete a book with its title, author and genre.</li>
 <li>The selected book genres are represented with colour coding on the books.</li>
+<li>Wish list page for books you would like to purchase.</li>
 <li>Show/hide form entry components.</li>
+<li>Book created on Library page, own:true. Book created on Wish List page, own:false.</li>
 </ul>
 
 <h2>Future Features</h2>
@@ -27,7 +29,7 @@ All visuals and animations were created with 100% CSS styling.
 <li>Filter/Sort Library by genre/title/author.</li>
 <li>Toggle indication of whether a book has been read or not.</li>
 <li>Indication of book that has been loaned out. To who and when.</li>
-<li>Wish list page for books you would like to purchase.</li>
+
 </ul>
 
 <h2>Dependencies</h2>
