@@ -1,4 +1,4 @@
-<h1 align="center"> Bibliophile Blog</h1>
+<h1 align="center"> Liber</h1>
 
 
 I created this website to organize my library and keep a log of the books that I read, want, and the books I loan to my friends/family that are never returned!  

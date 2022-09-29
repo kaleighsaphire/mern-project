@@ -1,4 +1,3 @@
-import {FaReadme} from 'react-icons/fa'
 import {Link, useNavigate} from 'react-router-dom'
 import {useSelector, useDispatch} from 'react-redux'
 import {logout, reset} from '../features/auth/authSlice'
@@ -16,9 +15,17 @@ function Header() {
 
   return (
     <header className='header'>
-        <div className="logo">
-            <Link to='/'><FaReadme /> Bibliophile Blog</Link>
-        </div>
+        <Link to='/'>
+            <div className="logo-container">
+                <div className="cover"></div>
+                <div className="cover-cutout">
+                <div className="page-one"></div>
+                <div className="page-two"></div>
+                <div className="page-three"></div>
+            </div>
+            <div className="logo"><span>IBER</span></div>
+            </div>
+        </Link>
         <ul>
             {user ? (
                 <>

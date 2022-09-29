@@ -110,8 +110,8 @@ h3 {
   padding: 20px 20px;
   margin-bottom: 60px;
   border-radius: 10px;
-  border: 6px double rgb(164, 114, 193);
-  background-color: rgba(171, 119, 221, 0.6);
+  border: 4px double rgb(105, 19, 127);
+  background-color: rgba(171, 119, 221);
   box-shadow: inset 3px 2px 15px 1px rgba(139, 139, 139, 0.5);
 }
 .header ul {
@@ -136,18 +136,77 @@ h3 {
 .header ul li a svg {
   margin-right: 5px;
 }
-.logo>a  {
-  color: black;
-  padding: 8px 15px;
-  border-radius: 5px;
-  border: 1px solid rgb(241, 239, 242);
-  background: rgb(105, 19, 127, 0.4);
-  cursor: pointer;
-}
 
-.logo:hover {
-  transform: scale(0.98);
+/*************************/
+/********************Logo*/
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  margin-left: 20px;
+  margin-bottom: 5px;
 }
+.cover {
+  position: absolute;
+  height: 62.5px;
+  width: 62.5px;
+  border-radius: 4px;
+  background: rgb(105, 19, 127);
+  transform: rotate(-45deg);
+}
+.cover-cutout{
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  margin-top: -15px;
+  margin-left: 1px;
+  background: rgba(171, 119, 221);
+  transform: rotate(-45deg);
+}
+.page-one{
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  top: 9px;
+  left: 6px;
+  background: rgba(171, 119, 221);
+}
+.page-two{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  top: 9px;
+  left: 11px;
+  background: rgba(171, 119, 221);
+}
+.page-three{
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  top: 9px;
+  left: 16px;
+  background: rgba(171, 119, 221);
+}
+.logo {
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: x-small;
+  font-weight: bold;
+  color: white;
+  margin: -8px -15px 0 0;
+  transform: rotate(-45deg);
+}
+.logo-container:hover {
+  transform: scale(0.98);
+} */
 /*************************/
 /****************Headings*/
 .heading {
@@ -191,15 +250,14 @@ h3 {
   margin-bottom: 3px;
   padding: 4px 0;;
   border-radius: 5px;
-  border: 3px double rgba(171, 119, 221, 0.9);
-  background-color: rgba(171, 119, 221, 0.6);
+  border: 3px double rgb(105, 19, 127);
+  background-color: rgba(171, 119, 221)
 }
 .footer>a {
   font-size: .7rem;
   color: rgb(0, 0, 0);
   padding: 0 20px;
   padding-top: -5px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 5px;
   background-color: rgba(241, 244, 243, 0.2);
 }
