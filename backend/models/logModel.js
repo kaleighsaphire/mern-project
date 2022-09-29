@@ -15,6 +15,10 @@ const logSchema = mongoose.Schema(
         type: String,
         required: [true, 'Please add a text value']
     },
+    rating: {
+        type: String,
+        required: [true, 'Please add a rating']
+    },
     }, 
     {timestamps: true}
 )

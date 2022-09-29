@@ -634,23 +634,23 @@ h3 {
 }
 
 .log {
-  background-color: rgba(160, 111, 203, 0.3);;
+  background-color: rgb(157, 212, 197, .5);
   margin: 10px 0;
   padding: 20px 0 10px;
   border-radius: 10px;
   position: relative;
 }
 
-.log >.close {
+.log >.delete-log {
   position: absolute;
-  top: 10px;
+  bottom: 10px;
   right: 15px;
   cursor: pointer;
   border: none;
   background: none;
 }
 
-.close:hover {
+.delete-log:hover {
   color: rgb(227, 33, 101);
 }
 
@@ -681,7 +681,7 @@ h3 {
   margin-bottom: 10px;
   border: 1px solid rgba(14, 167, 121);
   border-radius: 5px;
-  background-color: rgba(91, 210, 174, 0.1);
+  background-color: rgba(172, 237, 218, 0.1);
   caret-color: rgb(227, 33, 101);
 }
 

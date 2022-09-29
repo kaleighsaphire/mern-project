@@ -46,7 +46,7 @@ function Library({showAdd}) {
     <section className="book-content">
       {books.length > 0 ? (
         <div className="books">
-          {books.map((book) => (
+          {books.filter((book) => book.own === true).map((book) => (
             <BookEntry key={book._id} book={book} />
           ))}
         </div>

@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import {useDispatch} from 'react-redux'
+import { useLocation } from 'react-router-dom'
 import {createBook} from '../features/books/bookSlice'
 
 
@@ -7,22 +8,28 @@ function BookForm() {
     const [title, setTitle] = useState('') 
     const [author, setAuthor] = useState('') 
     const [genre, setGenre] = useState('')
+    const [own] = useState(Boolean)
+
     const dispatch = useDispatch()
+    const location = useLocation()
+
 
     const onSubmit = e => {
         e.preventDefault()
 
-        dispatch(createBook({title, author, genre}))
+        location.pathname === '/library' ? dispatch(createBook({title, author, genre})) : dispatch(createBook({title, author, genre, own}))
+        
         setTitle('')
         setAuthor('')
         setGenre('')
+        
     }
 
   return (
     <section className="form">
         <form onSubmit={onSubmit}>
             <div className="form-group">
-                <label htmlFor="title">Book Title:</label>
+                <label htmlFor="title">Title</label>
                 <input 
                 type="text" 
                 name="title" 
@@ -30,7 +37,7 @@ function BookForm() {
                 placeholder="Book title here..."
                 value={title} 
                 onChange={(e)=>setTitle(e.target.value)} />
-                <label htmlFor="author">Author's Name:</label>
+                <label htmlFor="author">Author</label>
                 <input 
                 type="text" 
                 name="author" 
@@ -38,7 +45,7 @@ function BookForm() {
                 placeholder="Author's name here..."
                 value={author} 
                 onChange={(e)=>setAuthor(e.target.value)} />
-                <label htmlFor="genre">Book Genre:</label>
+                <label htmlFor="genre">Genre</label>
                 <select type="text" 
                     name="genre" 
                     id="genre" 

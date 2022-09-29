@@ -25,7 +25,8 @@ const addBook = asyncHandler(async (req, res) => {
         title: req.body.title,
         author: req.body.author,
         genre: req.body.genre,
-        user: req.user.id
+        user: req.user.id,
+        own: req.body.own
     })
     res.status(200).json(book)
 })

@@ -19,6 +19,10 @@ const bookSchema = mongoose.Schema(
         type: String,
         required: [true, 'Please select a genre']
     },
+    own: {
+        type: Boolean,
+        default: true,
+    }
     }, 
     {timestamps: true}
 )

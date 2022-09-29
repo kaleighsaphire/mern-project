@@ -29,6 +29,9 @@ function Header() {
                         <Link to='/library'>Library</Link>
                     </li>
                     <li>
+                        <Link to='/wishlist'>Wish List</Link>
+                    </li>
+                    <li>
                         <button className='btn' onClick={onLogout}>Logout</button>
                     </li>
                 </>
