@@ -19,7 +19,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font: 62.5%;
 	vertical-align: baseline;
 }
 
@@ -206,7 +206,7 @@ h3 {
 }
 .logo-container:hover {
   transform: scale(0.98);
-} */
+} 
 /*************************/
 /****************Headings*/
 .heading {
@@ -780,6 +780,9 @@ h3 {
   background-color: rgb(227, 33, 101, 0.7);
   border: 1px solid rgb(164, 114, 193);
   transform: scale(0.98);
+}
+.btn-block {
+  width: 100%;
 }
 
 .heading>.btn{
