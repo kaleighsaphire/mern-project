@@ -682,6 +682,91 @@ h3 {
   margin: 0 0 0 58px;
   background: rgb(223, 142, 209);
 }
+/*************************/
+/****************Bookmark*/
+.bookmark-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+  padding-right: 5%;
+  border-radius: 10px;
+  background-color: rgb(157, 212, 197);
+  box-shadow: inset 6px 3px 20px 1px rgba(214, 213, 213, 0.5);
+}
+.book-cover {
+  position: absolute;
+  height: 50px;
+  width: 150px;
+  left: 30%;
+  border-radius: 2px;
+  background: rgb(165, 168, 230);
+  box-shadow: inset 5px 4px 20px 1px rgba(121, 55, 126, 0.5);
+  transform: skew(-45deg);
+}
+.book-cover:after {
+  position: absolute;
+  content: "";
+  height: 50px;
+  width: 25px;
+  top: 15px;
+  left: 149px;
+  background: #fff;
+  border-radius: 2px;
+  border-right: 5px solid rgb(165, 168, 230);
+  box-shadow: inset 4px 0px 5px 1px rgba(116, 115, 115, 0.5);
+  transform: skew(0deg, 45deg);
+}
+.book-spine {
+  position: absolute;
+  height: 30px;
+  width: 150px;
+  top: 50px;
+  left: 15px;
+  border-radius: 2px;
+  background: rgb(165, 168, 230);
+  box-shadow: inset 2px 2px 8px 1px rgba(138, 92, 157, 0.6);
+  transform: skew(45deg, 0deg);
+}
+.bookmark {
+  position: absolute;
+  height: 10px;
+  width: 75px;
+  top: 40px;
+  left: 160px;
+  border: 2px solid rgb(230, 216, 130);
+  background: rgb(230, 96, 159);
+  z-index: 1;
+/*   transform: skew(-45deg); */
+}
+.bookmark:after {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 75px;
+  top: 15px;
+  left: 11px;
+  background: rgba(0, 0 , 0, .1);
+}
+.book-cover:hover .bookmark{
+  position: absolute;
+  height: 10px;
+  width: 20px;
+}
+.book-cover:hover .bookmark:after {
+  width: 20px;
+  left: 12px;
+}
+.wishlist-dashboard>h2 {
+  position: absolute;
+  text-shadow: 1px 1px rgba(33, 33, 33, 0.4);
+  font-size: 2.5em;
+  margin: -110px 0 0 370px;
+}
+
+.wishlist-dashboard>h2:hover {
+  transform: scale(0.98);
+}
 
 /*************************/
 /*********************Log*/

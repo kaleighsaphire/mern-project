@@ -22,12 +22,14 @@ function Dashboard() {
   }, [user, navigate, isError, message, dispatch])
 
   return (
-    <>
+  <>
     <section className="heading">
       <h1>Welcome {user && user.name}</h1>
       <p>What are you reading today?</p>
     </section>
+
     <section className="page-links">
+
       <section className="link-container">
         <Link to='/blog'>
           <div className="journal-link">
@@ -54,14 +56,14 @@ function Dashboard() {
               </div>
               <div className="page1"></div>
               <div className="front"> 
-                <h2 className="journal">{user && user.name}'s Reading Journal</h2>
+                <h2 className="journal">{user && user.name}'s Journal</h2>
               </div>
             </div>
             <div className="blog-dashboard"><h2>Journal</h2></div>
           </div>
         </Link>
       </section>
-    </section>
+    
       <section className="link-container">
         <Link to='/library'>
           <div className="bg">
@@ -96,8 +98,22 @@ function Dashboard() {
             </div>
           </div>
         </Link>
+      </section>
+        <section className="link-container">
+          <Link to='/wishlist'>
+            <div className="bookmark-container">
+              <div className="book-cover">
+                <div className="book-spine"></div>
+                <div className="bookmark"></div>
+              </div>
+            </div>
+            <div className="wishlist-dashboard">
+              <h2>Wish List</h2>
+            </div>
+          </Link>
+        </section>
     </section>
-    </>
+  </>
   )
 }
 
