@@ -65,19 +65,8 @@ a {
 }
 
 p {
-  line-height: 1.7;
-}
-
-li {
-  line-height: 2.2;
-}
-
-h1,
-h2,
-h3 {
-  font-weight: 700;
-  margin-bottom: 10px;
-  text-shadow: 1px 1px rgba(225, 224, 224, 0.9);
+  line-height: 1.5;
+  text-indent: 30px;
 }
 
 /*************************/
@@ -93,12 +82,20 @@ h3 {
   padding: 0 15px;
   text-align: center;
 }
-.link-container {
-  margin: 20px 15%;
+.page-links {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 5px;
+  max-width: 960px;
+}
+
+.journal-link, .bookmark-container, .bg {
+  width: 250px;
+  height: 200px;
   border-radius: 10px;
   border: 4px double rgb(244, 247, 246);
   background-color: rgb(157, 212, 197);
-  box-shadow: inset 4px 2px 25px 1px rgba(116, 115, 115, 0.5);
 }
 
 /*************************/
@@ -131,10 +128,6 @@ h3 {
 
 .header ul li a:hover {
   color: rgb(105, 19, 127);
-}
-
-.header ul li a svg {
-  margin-right: 5px;
 }
 
 /*************************/
@@ -216,33 +209,15 @@ h3 {
   padding: 0 20px;
 }
 .heading>p {
-  color: rgb(61, 111, 96);
-}
-.blog-dashboard {
- position: relative;
-}
-.blog-dashboard>h2 {
-  position: absolute;
-  text-shadow: 1px 1px rgba(33, 33, 33, 0.4);
-  font-size: 2.5em;
-  margin: -90px 0 0 35px;
-}
-.blog-dashboard>h2:hover {
-  transform: scale(0.98);
+  color: rgb(61, 111, 96, .9);
 }
 
-.library-dashboard {
-  position: relative;
+.library{
+  position: absolute;
+  font-size: .9em;
+  margin: 0 5px;
  }
- .library-dashboard>h2{
-   position: absolute;
-   text-shadow: 1px 1px rgba(33, 33, 33, 0.5);
-   font-size: 2.5em;
-   margin: 35px 0 0 50px;
- }
- .library-dashboard>h2:hover {
-  transform: scale(0.98);
-}
+
 /*************************/
 /******************Footer*/
 .footer {
@@ -267,33 +242,30 @@ h3 {
 
 .journal-link {
   position: relative;
-  margin: 0 50%;
   padding: 20px 10px;
 }
 
 .journal {
   color: rgba(255, 255, 255);
-  font-size: 13px;
   line-height: 1.2em;
   margin: 30% 0;
-  text-shadow: 1px 1px rgb(85, 85, 85, .5);
 }
 .book-text {
   color: rgb(86, 85, 85);
   font-size: 5px;
   margin: 12px 2px;
- 
 }
 .special {
   margin: 10px 2px;
   font-size: 13px;
+  text-indent: 0;
 }
 
 .open-book {
   transform-style: preserve-3d;
   position: relative;
   height: 150px;
-  margin-left: -150px;
+  margin-left: 50%;
   cursor: pointer;
   backface-visibility: visible;
 }
@@ -313,7 +285,7 @@ h3 {
   border-bottom: 3px solid rgb(239, 239, 239);
   border-right: 5px inset rgb(250, 250, 250);
   border-radius: 2px 3px 3px 2px;
-  box-shadow: inset 1px 1px 6px 1px rgba(0,0,0,0.5);
+  box-shadow: inset 1px 1px 10px 1px rgba(73, 12, 100, 0.5);
 }
 .front, .back {
   background: rgba(146, 69, 165, 0.7);
@@ -398,18 +370,14 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: -0px;
-  padding: 31px 0;
   border-radius: 10px;
   background-color: rgb(61, 111, 96);
-  box-shadow: inset 6px 3px 20px 1px rgba(214, 213, 213, 0.5);
 }
 
 .book1 {
   position: relative;
   height:15px;
   width:70px;
-  margin-right: 200px;
   border: 2px solid rgb(241, 178, 83);
   border-radius: 5px 0 0 5px;
   border-right-style: none;
@@ -436,7 +404,6 @@ h3 {
   position: relative;
   height:20px;
   width:63px;
-  margin-right: 200px;
   border-radius: 1px;   
   background: rgb(207, 158, 228);
   box-shadow: inset 5px -2px 14px 1px rgba(0,0,0,0.5);
@@ -493,7 +460,6 @@ h3 {
   position: relative;
   height:15px;
   width:70px;
-  margin-right: 200px;
   border: 2.5px solid rgb(106, 198, 194);
   border-radius: 0 5px 5px 0;
   border-left-style: none;
@@ -520,14 +486,13 @@ h3 {
   position: relative;
   height:17px;
   width:80px;
-  margin-right: 200px;
   border-radius: 1px; 
   background: rgb(165, 168, 230);
   box-shadow: inset 3px -2px 8px 1px rgba(84, 83, 83, 0.5);
   cursor: url('./book.png'), auto;
 }
 
-.book4:before,
+/* .book4:before,
 .book4:after {
   position: absolute;
   content: "";
@@ -540,7 +505,7 @@ h3 {
   border-radius: 50%;
   background: white;
   box-shadow: inset 1px -1px 2px 1px rgba(0,0,0,0.4);
-}
+} */
 
 .ribbonCut4 {
   position: absolute;
@@ -570,7 +535,6 @@ h3 {
   position: relative;
   height:20px;
   width:73px;
-  margin-right: 200px;
   border-radius: 1px; 
   background: rgb(140, 205, 166);
   box-shadow: inset 3px 2px 8px 1px rgba(0,0,0,0.5); 
@@ -601,9 +565,8 @@ h3 {
 
 .book6 {
   position: relative;
-  height:15px;
-  width:82px;
-  margin-right: 200px;
+  height: 15px;
+  width: 82px;
   border: 2.5px solid rgb(230, 216, 130);
   border-radius: 1px 5px 5px 1px;
   border-left-style: none;
@@ -627,9 +590,8 @@ h3 {
 
 .book7 {
   position: relative;
-  height:20px;
-  width:100px;
-  margin-right: 200px;
+  height: 20px;
+  width: 100px;
   margin-bottom: 1.5px;
   border-radius: 1px; 
   background: rgb(196, 73, 131);
@@ -682,23 +644,20 @@ h3 {
   margin: 0 0 0 58px;
   background: rgb(223, 142, 209);
 }
+
 /*************************/
 /****************Bookmark*/
 .bookmark-container {
+  position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 170px;
-  padding-right: 5%;
-  border-radius: 10px;
-  background-color: rgb(157, 212, 197);
-  box-shadow: inset 6px 3px 20px 1px rgba(214, 213, 213, 0.5);
+
 }
 .book-cover {
   position: absolute;
-  height: 50px;
-  width: 150px;
-  left: 30%;
+  height: 40px;
+  width: 125px;
+  left: 10%;
   border-radius: 2px;
   background: rgb(165, 168, 230);
   box-shadow: inset 5px 4px 20px 1px rgba(121, 55, 126, 0.5);
@@ -707,10 +666,10 @@ h3 {
 .book-cover:after {
   position: absolute;
   content: "";
-  height: 50px;
-  width: 25px;
-  top: 15px;
-  left: 149px;
+  height: 40px;
+  width: 20px;
+  top: 13px;
+  left: 125px;
   background: #fff;
   border-radius: 2px;
   border-right: 5px solid rgb(165, 168, 230);
@@ -719,10 +678,10 @@ h3 {
 }
 .book-spine {
   position: absolute;
-  height: 30px;
-  width: 150px;
-  top: 50px;
-  left: 15px;
+  height: 25px;
+  width: 125px;
+  top: 40px;
+  left: 12px;
   border-radius: 2px;
   background: rgb(165, 168, 230);
   box-shadow: inset 2px 2px 8px 1px rgba(138, 92, 157, 0.6);
@@ -732,17 +691,16 @@ h3 {
   position: absolute;
   height: 10px;
   width: 75px;
-  top: 40px;
-  left: 160px;
+  top: 32px;
+  left: 132px;
   border: 2px solid rgb(230, 216, 130);
   background: rgb(230, 96, 159);
   z-index: 1;
-/*   transform: skew(-45deg); */
 }
 .bookmark:after {
   position: absolute;
   content: "";
-  height: 12px;
+  height: 10px;
   width: 75px;
   top: 15px;
   left: 11px;
@@ -757,15 +715,8 @@ h3 {
   width: 20px;
   left: 12px;
 }
-.wishlist-dashboard>h2 {
-  position: absolute;
-  text-shadow: 1px 1px rgba(33, 33, 33, 0.4);
-  font-size: 2.5em;
-  margin: -110px 0 0 370px;
-}
-
-.wishlist-dashboard>h2:hover {
-  transform: scale(0.98);
+.wish-list {
+  margin-top: 5px;
 }
 
 /*************************/

@@ -56,10 +56,9 @@ function Dashboard() {
               </div>
               <div className="page1"></div>
               <div className="front"> 
-                <h2 className="journal">{user && user.name}'s Journal</h2>
+                <h2 className="journal">Journal</h2>
               </div>
             </div>
-            <div className="blog-dashboard"><h2>Journal</h2></div>
           </div>
         </Link>
       </section>
@@ -67,7 +66,7 @@ function Dashboard() {
       <section className="link-container">
         <Link to='/library'>
           <div className="bg">
-          <div className="library-dashboard"><h2>Library</h2></div>
+          <div className="library-dashboard"></div>
             <div className="book1">
               <div className="ribbon1"></div>
               <div className="bookCut"></div>
@@ -82,9 +81,11 @@ function Dashboard() {
                <div className="bookCut3"></div>
             </div>
             <div className="book4">
+
                <div className="ribbonCut4"></div>
                <div className="ribbonCut5"></div>
                <div className="ribbonCut6"></div>
+               <h2 className="library">Library</h2>
             </div>
             <div className="book5"></div>
             <div className="book6">
@@ -103,13 +104,15 @@ function Dashboard() {
           <Link to='/wishlist'>
             <div className="bookmark-container">
               <div className="book-cover">
-                <div className="book-spine"></div>
+                <div className="book-spine">
+                <h2 className="wish-list">Wish List</h2>
+                </div>
                 <div className="bookmark"></div>
               </div>
             </div>
-            <div className="wishlist-dashboard">
+            {/* <div className="wishlist-dashboard">
               <h2>Wish List</h2>
-            </div>
+            </div> */}
           </Link>
         </section>
     </section>

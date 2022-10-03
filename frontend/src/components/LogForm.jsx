@@ -24,6 +24,7 @@ function LogForm() {
             <div className="form-group">
                 <label htmlFor="title"></label>
                 <input 
+                spellcheck="true"
                 type="text" 
                 name="title" 
                 id="title" 
@@ -32,6 +33,7 @@ function LogForm() {
                 onChange={(e)=>setTitle(e.target.value)} />
                 <label htmlFor="text"></label>
                 <textarea 
+                spellcheck="true"
                 type="text" 
                 name="text" 
                 id="text" 

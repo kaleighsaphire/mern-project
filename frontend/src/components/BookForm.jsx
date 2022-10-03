@@ -31,6 +31,7 @@ function BookForm() {
             <div className="form-group">
                 <label htmlFor="title">Title</label>
                 <input 
+                spellcheck="true"
                 type="text" 
                 name="title" 
                 id="title" 
