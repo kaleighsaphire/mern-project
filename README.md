@@ -1,4 +1,4 @@
-<h1 align="center"> Liber</h1>
+<h1 align="center"><img height="75px"src="https://i.imgur.com/OgwNEG6.png" title="source: imgur.com" /> Liber</h1>
 
 
 I created this website to organize my library and keep a log of the books that I read, want, and the books I loan to my friends/family that are never returned!  
