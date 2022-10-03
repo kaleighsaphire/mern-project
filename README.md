@@ -31,6 +31,7 @@ All visuals and animations were created with 100% CSS styling.
 <li>Filter/Sort Library by genre/title/author.</li>
 <li>Toggle indication of whether a book has been read or not.</li>
 <li>Indication of book that has been loaned out. To who and when.</li>
+<li>About page availible for view without an account.</li>
 
 </ul>
 
