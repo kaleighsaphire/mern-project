@@ -8,7 +8,7 @@ Authorization has been implemented via Json Web Token, using an email sign up.
 
 All visuals and animations were created with 100% CSS styling.
 
-<p align="center"><a href="https://imgur.com/SLj51cZ"><img src="https://i.imgur.com/SLj51cZ.gif" title="source: imgur.com" /></a></p>
+<p align="center"><a href="https://imgur.com/qVP712c"><img src="https://i.imgur.com/qVP712c.gif" title="source: imgur.com" /></a></p>
 
 <h2>Current Features</h2>
 <ul>
@@ -56,5 +56,5 @@ bcryptjs, colors, dotenv, express, express-async-handler, jsonwebtoken, nodemon,
 </ol>
 
 <h3 align="center">Loading Animation</h3>
-<p align="center"><a href="https://imgur.com/9WUeDLN"><img src="https://i.imgur.com/9WUeDLN.gif" title="source: imgur.com" /></a></p>
+<p align="center"><a href="https://imgur.com/sYUPO9J"><img src="https://i.imgur.com/sYUPO9J.gif" title="source: imgur.com" /></a></p>
 
