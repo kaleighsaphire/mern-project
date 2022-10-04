@@ -38,6 +38,29 @@ function Library({showAdd}) {
 
   return (
     <>
+      <div class="shelf-container">
+        <div class="shelf bookL">
+          <div class="shelf bookI">
+            <h6>I</h6>
+          </div>
+          <div class="shelf bookB">
+            <h6>B</h6>
+          </div>
+          <div class="shelf bookR">
+            <h6>R</h6>
+          </div>
+          <div class="shelf bookA">
+            <h6>A</h6>
+          </div>
+          <div class="shelf bookR2">
+            <h6>R</h6>
+          </div>
+          <div class="shelf bookY">
+            <h6>Y</h6>
+          </div>
+          <h6>L</h6>
+        </div>
+    </div>
     <Heading
         onAdd={() => setShowBookForm(!showBookForm)}
         showAdd={showBookForm}
