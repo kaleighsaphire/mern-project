@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import {useDispatch} from 'react-redux'
 import { useLocation } from 'react-router-dom'
+import { toast } from 'react-toastify'
 import {createBook} from '../features/books/bookSlice'
 
 
@@ -17,11 +18,18 @@ function BookForm() {
     const onSubmit = e => {
         e.preventDefault()
 
-        location.pathname === '/library' ? dispatch(createBook({title, author, genre})) : dispatch(createBook({title, author, genre, own}))
+        if (!title || !author || !genre) {
+            toast.error("PLEASE FILL ALL AVAILABLE FIELDS", {
+              position: toast.POSITION.TOP_CENTER,
+              className: "alert alert-error",
+            });
+        }else{
+            location.pathname === '/library' ? dispatch(createBook({title, author, genre})) : dispatch(createBook({title, author, genre, own}))
         
-        setTitle('')
-        setAuthor('')
-        setGenre('')
+            setTitle('')
+            setAuthor('')
+            setGenre('')
+        }
         
     }
 

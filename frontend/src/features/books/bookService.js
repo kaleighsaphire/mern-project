@@ -48,7 +48,6 @@ const updateBook = async (bookId, bookData, token) => {
             Authorization: `Bearer ${token}`
         }
     }
-    bookData = {title: "Fake Title"}
     const response = await axios.put(API_URL + bookId, bookData, config)
     
     return response.data

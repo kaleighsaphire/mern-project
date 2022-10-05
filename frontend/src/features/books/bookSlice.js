@@ -58,10 +58,10 @@ export const deleteBook = createAsyncThunk('books/delete', async (id, thunkAPI) 
 })
 
 // Edit user book
-export const updateBook = createAsyncThunk('books/update', async (id, bookData, thunkAPI) => {
+export const updateBook = createAsyncThunk('books/update', async (bookData, thunkAPI) => {
     try {
-        const token = thunkAPI.getState().auth.user.token
-        return await bookService.updateBook(id, bookData, token) 
+        const {token} = thunkAPI.getState().auth.user
+        return await bookService.updateBook(bookData.id, bookData, token) 
     } catch (error) {
         const message = 
                 (error.response && 

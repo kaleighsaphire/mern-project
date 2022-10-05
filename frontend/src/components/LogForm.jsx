@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import {useDispatch} from 'react-redux'
+import { toast } from 'react-toastify'
 import {createLog} from '../features/logs/logSlice'
 
 
@@ -12,10 +13,17 @@ function LogForm() {
     const onSubmit = e => {
         e.preventDefault()
 
-        dispatch(createLog({title, text, rating}))
-        setTitle('')
-        setText('')
-        setRating('')
+        if (!title || !text || !rating) {
+            toast.error("PLEASE FILL ALL AVAILABLE FIELDS", {
+              position: toast.POSITION.TOP_CENTER,
+              className: "alert alert-error",
+            });
+        }else{
+            dispatch(createLog({title, text, rating}))
+            setTitle('')
+            setText('')
+            setRating('')
+        }
     }
 
   return (
