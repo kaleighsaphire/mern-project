@@ -61,14 +61,23 @@ function BookForm() {
                     value={genre} 
                     onChange={(e)=>setGenre(e.target.value)}>
                         <option>Select a genre</option>
+                        <option value="Adventure">Adventure</option>
                         <option value="Biography">Biography</option>
+                        <option value="Classic">Classic</option>
+                        <option value="Comedy">Comedy</option>
+                        <option value="Drama">Drama</option>
                         <option value="Fantasy">Fantasy</option>
+                        <option value="Graphic-Novel">Graphic Novel</option>
                         <option value="History">History</option>
+                        <option value="Literary-Fiction">Literary Fiction</option>
                         <option value="Mystery">Mystery</option>
                         <option value="Non-Fiction">Non-Fiction</option>
+                        <option value="Philosophy">Philosophy</option>
+                        <option value="Poetry">Poetry</option>
                         <option value="Romance">Romance</option>
                         <option value="Science Fiction">Science Fiction</option>
                         <option value="Self-Help">Self-Help</option>
+                        <option value="Short-Stories">Short Stories</option>
                         <option value="Thriller">Thriller</option>
                         <option value="Young Adult">Young Adult</option>
                 </select>

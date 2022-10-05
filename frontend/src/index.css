@@ -21,6 +21,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: 62.5%;
 	vertical-align: baseline;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -837,6 +838,7 @@ h6 {
   font-size: 25px;
   color: rgb(248, 243, 243);
   margin: 15px 0 0 3px;
+  user-select: none;
 }
 
 .bookL {
@@ -912,29 +914,29 @@ h6 {
   width:100px;
   height: 148px; 
   font-size: .8rem;
-  border-bottom: 3px solid rgb(243, 240, 240);
-  border-right: 4px inset rgb(245, 245, 243);
+  border-bottom: 4px solid rgb(229, 227, 227);
+  border-right: 3px inset rgb(224, 224, 223);
   border-radius: 5px 4px 3px 6px;
-  background-image: linear-gradient(to right,rgba(75, 179, 141, 0.6) 8px, rgb(80, 80, 80, .6) 10px, transparent 10px);   
-  box-shadow: inset 0px -2px 10px -1px rgba(0,0,0,0.5);
+  background-image: linear-gradient(to right,rgba(171, 119, 221, 0.8) 8px, rgb(80, 80, 80, .6) 10px, transparent 10px);   
+  box-shadow: 0px -2px 5px -1px rgba(0,0,0,0.5);
 }
 
 .book-title {
   word-break: break-word;
-  padding: 15px 6px 0 10px;
+  padding: 15px 0 0 10px;
 }
 .book-author {
   color: black;
   font-size: smaller;
-  padding: 5px 15px;
+  padding: 15px 0 0 10px;
 }
 .delete {
   font-size: xx-small;
-  color: rgb(189, 185, 185);
+  color: rgb(255, 255, 255);
   cursor: pointer;
   position: absolute;
-  bottom: 4px;
-  left: 0;
+  bottom: 1px;
+  left: 1px;
   background: none;
 }   
 .delete:hover {
@@ -943,37 +945,120 @@ h6 {
 
 /*************************/
 /*************Book Genres*/
+.Adventure {
+  color: rgb(98, 78, 232);
+  height: 144px;
+  border-radius: 5px 0 0 6px;
+  background-image: linear-gradient(to right,rgb(98, 78, 232, .8) 8px, rgb(62, 37, 227) 10px, transparent 10px);
+}
 .Biography {
-  color: orange;
+  color: rgb(255, 165, 0);
+  height: 144px;
+  border-radius: 5px 0 0 6px;
+  background-image: linear-gradient(to right,rgb(255, 165, 0, .8) 8px, rgba(230, 129, 35) 10px, transparent 10px);
+}
+.Classic {
+  color: rgb(215, 55, 55);
+  height: 144px;
+  border-radius: 5px 0 0 6px;
+  background-image: linear-gradient(to right,rgb(215, 55, 55, .8) 8px, rgb(215, 55, 55) 10px, transparent 10px);
+}
+.Comedy {
+  color: rgb(164, 194, 103);
+  height: 144px;
+  border-radius: 5px 0 0 6px;
+  background-image: linear-gradient(to right,rgb(164, 194, 103, .8) 8px, rgb(109, 192, 45) 10px, transparent 10px);
+}
+.Drama {
+  color: rgb(255, 165, 0);
+  height: 144px;
+  border-radius: 5px 0 0 6px;
+  background-image: linear-gradient(to right,rgb(255, 165, 0, .8) 8px, rgba(230, 129, 35) 10px, transparent 10px);
 }
 .Fantasy {
   color: rgb(200, 146, 224);
+  height: 144px;
+  border-radius: 5px 0 0 6px;
+  background-image: linear-gradient(to right,rgb(200, 146, 224, .8) 8px, rgba(169, 45, 222) 10px, transparent 10px);
 
 }
+.Graphic-Novel {
+  color: rgb(83, 83, 82);
+  height: 144px;
+  border-radius: 5px 0 0 6px;
+  background-image: linear-gradient(to right,rgb(83, 83, 82, .8) 8px, rgb(17, 17, 17)0px, transparent 10px);
+}
 .History {
-  color: rgb(230, 216, 130);
+  color: rgb(249, 199, 79);
+  height: 144px;
+  border-radius: 5px 0 0 6px;
+  background-image: linear-gradient(to right,rgb(249, 199, 79, .8) 8px, rgb(246, 176, 11) 10px, transparent 10px);
+}
+.Literary-Fiction {
+  color: rgb(59, 226, 232);
+  height: 144px;
+  border-radius: 5px 0 0 6px;
+  background-image: linear-gradient(to right,rgb(59, 226, 232, .8) 8px, rgb(9, 199, 206) 10px, transparent 10px);
 }
 .Mystery {
   color: rgb(159, 60, 60);
+  height: 144px;
+  border-radius: 5px 0 0 6px;
+  background-image: linear-gradient(to right,rgb(159, 60, 60, .8) 8px, rgb(157, 5, 5) 10px, transparent 10px);
 }
 .Non-Fiction {
   color: rgb(137, 139, 214);
+  height: 144px;
+  border-radius: 5px 0 0 6px;
+  background-image: linear-gradient(to right,rgb(137, 139, 214, .8) 8px, rgb(59, 65, 215) 10px, transparent 10px);
+}
+.Philosophy {
+  color: rgb(249, 199, 79);
+  height: 144px;
+  border-radius: 5px 0 0 6px;
+  background-image: linear-gradient(to right,rgb(249, 199, 79, .8) 8px, rgb(246, 176, 11) 10px, transparent 10px);
+}
+.Poetry {
+  color: rgb(223, 142, 209);
+  height: 144px;
+  border-radius: 5px 0 0 6px;
+  background-image: linear-gradient(to right,rgb(223, 142, 209, .8) 8px, rgb(233, 100, 211) 10px, transparent 10px);
 }
 .Romance {
-  color: rgb(223, 142, 209); 
+  color: rgb(209, 63, 175); 
+  height: 144px;
+  border-radius: 5px 0 0 6px;
+  background-image: linear-gradient(to right,rgb(209, 63, 175, .8) 8px, rgb(195, 61, 173) 10px, transparent 10px);
 }
 .Science {
-  color: rgb(140, 205, 166);
+  color: rgb(140, 205, 147);
+  height: 144px;
+  border-radius: 5px 0 0 6px;
+  background-image: linear-gradient(to right,rgb(140, 205, 147, .8) 8px, rgb(70, 206, 125) 10px, transparent 10px);
 }
 .Self-Help {
   color: rgb(105, 106, 189);
-
+  height: 144px;
+  border-radius: 5px 0 0 6px;
+  background-image: linear-gradient(to right,rgb(105, 106, 189, .8) 8px, rgb(33, 36, 193) 10px, transparent 10px);
+}
+.Short-Stories {
+  color: rgb(249, 116, 79);
+  height: 144px;
+  border-radius: 5px 0 0 6px;
+  background-image: linear-gradient(to right,rgb(249, 116, 79, .8) 8px, rgb(242, 85, 41) 10px, transparent 10px);
 }
 .Thriller {
-  color: rgb(207, 102, 102);
+  color: rgb(218, 5, 5);
+  height: 144px;
+  border-radius: 5px 0 0 6px;
+  background-image: linear-gradient(to right,rgb(218, 5, 5, .8) 8px, rgb(151, 3, 3) 10px, transparent 10px);
 }
 .Young {
   color: rgb(106, 198, 194);
+  height: 144px;
+  border-radius: 5px 0 0 6px;
+  background-image: linear-gradient(to right,rgb(106, 198, 194, .8) 8px, rgb(106, 198, 194) 10px, transparent 10px);
 }
 
 /*************************/

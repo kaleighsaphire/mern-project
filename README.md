@@ -25,7 +25,6 @@ All visuals and animations were created with 100% CSS styling.
 
 <h2>Future Features</h2>
 <ul>
-<li>Add more book genres.</li>
 <li>Edit a journal entry.</li>
 <li>Sort journal entries by date / book title / author / rating.</li>
 <li>Filter/Sort Library by genre/title/author.</li>
