@@ -8,7 +8,7 @@ Authorization has been implemented via Json Web Token, using an email sign up.
 
 All visuals and animations were created with 100% CSS styling.
 
-<p align="center"><a href="https://imgur.com/qVP712c"><img src="https://i.imgur.com/qVP712c.gif" title="source: imgur.com" /></a></p>
+<p align="center"><a href="https://imgur.com/60aR9Ca"><img src="https://i.imgur.com/60aR9Ca.gif" title="source: imgur.com" /></a></p>
 
 <h2>Current Features</h2>
 <ul>
