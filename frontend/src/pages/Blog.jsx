@@ -38,6 +38,15 @@ function Blog() {
 
   return (
     <>
+      <div class="pencil-container">
+        <div class="pencil-body">
+          <div class="pencil-tip"></div>
+          <div class="pencil-tippy-tip"></div>
+          <div class="pencil-journal">
+            <h6>JOURNAL</h6>
+          </div>
+        </div>
+      </div>
     <Heading
         onAdd={() => setShowLogForm(!showLogForm)}
         showAdd={showLogForm}

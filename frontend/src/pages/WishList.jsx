@@ -38,6 +38,16 @@ function Library({showAdd}) {
 
   return (
     <>
+    <div className="tote-container">
+      <div className="tote-handle1">
+        <div className="tote-handle2"></div>
+        <div className="tote">
+          <h6 className="tote-text">WISH LIST</h6>
+          <div className="heart"></div>
+          <div className="heart2"></div>
+        </div> 
+      </div>
+    </div>
     <Heading
         onAdd={() => setShowBookForm(!showBookForm)}
         showAdd={showBookForm}
