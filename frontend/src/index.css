@@ -836,6 +836,15 @@ p {
 }
 
 /*************************/
+/****************Sort Form*/
+
+.sort-form {
+  display: block;
+  margin-left: 60%;
+  color: rgb(105, 19, 127, .8);
+}
+
+/*************************/
 /******************Button*/
 .btn {
   font-family: 'Roboto Slab', serif;

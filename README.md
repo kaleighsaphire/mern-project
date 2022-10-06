@@ -20,17 +20,16 @@ All visuals and animations were created with 100% CSS styling.
 <li>Show/hide form entry components.</li>
 <li>Book created on Library page, own:true. Book created on Wish List page, own:false.</li>
 <li>Rating feature on journal entries.</li>
+<li>Sort Library alphabetically by genre/title/author.</li>
 <li>Custom CSS logo</li>
 </ul>
 
 <h2>Future Features</h2>
 <ul>
-<li>Edit a journal entry.</li>
 <li>Sort journal entries by date / book title / author / rating.</li>
-<li>Filter/Sort Library by genre/title/author.</li>
 <li>Toggle indication of whether a book has been read or not.</li>
 <li>Indication of book that has been loaned out. To who and when.</li>
-<li>About page availible for view without an account.</li>
+<li>About page available for view without an account.</li>
 
 </ul>
 
