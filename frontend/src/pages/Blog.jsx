@@ -38,11 +38,11 @@ function Blog() {
 
   return (
     <>
-      <div class="pencil-container">
-        <div class="pencil-body">
-          <div class="pencil-tip"></div>
-          <div class="pencil-tippy-tip"></div>
-          <div class="pencil-journal">
+      <div className="pencil-container">
+        <div className="pencil-body">
+          <div className="pencil-tip"></div>
+          <div className="pencil-tippy-tip"></div>
+          <div className="pencil-journal">
             <h6>JOURNAL</h6>
           </div>
         </div>
