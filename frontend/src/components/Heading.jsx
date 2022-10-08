@@ -1,8 +1,6 @@
-import { useLocation } from 'react-router-dom'
 import Button from './Button'
 
 const Heading = ({ title, onAdd, showAdd }) => {
-    const location = useLocation()
 
   return (
     <section className="heading">

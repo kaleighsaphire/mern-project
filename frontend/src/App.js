@@ -9,16 +9,18 @@ import WishList from './pages/WishList'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import Footer from './components/Footer'
-import { About } from './pages/About'
+import About from './pages/About'
+import {useSelector} from 'react-redux'
 
 function App() {
+  const {user} = useSelector((state) => state.auth)
   return (
     <>
       <Router>
         <div className='container'>
           <Header />
           <Routes>
-            <Route path='/' element={<About />} />
+            <Route path='/' element={user ? <Dashboard /> : <About />} />
             <Route path='/dashboard' element={<Dashboard />} />
             <Route path='/blog' element={<Blog />} />
             <Route path='/library' element={<Library />} />

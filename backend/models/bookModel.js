@@ -22,6 +22,10 @@ const bookSchema = mongoose.Schema(
     own: {
         type: Boolean,
         default: true,
+    },
+    read: {
+        type: Boolean,
+        default: false,
     }
     }, 
     {timestamps: true}

@@ -10,6 +10,8 @@ function BookForm() {
     const [author, setAuthor] = useState('') 
     const [genre, setGenre] = useState('')
     const [own] = useState(Boolean)
+    // const [read, setRead] = useState('')
+
 
     const dispatch = useDispatch()
     const location = useLocation()
@@ -39,6 +41,7 @@ function BookForm() {
             setTitle('')
             setAuthor('')
             setGenre('')
+            // setRead{''}
         }
         
     }
@@ -91,6 +94,10 @@ function BookForm() {
                         <option value="Thriller">Thriller</option>
                         <option value="Young Adult">Young Adult</option>
                 </select>
+                <div className="checkbox">
+                    <label htmlFor="checkbox" className="checkbox">Read:</label>
+                    <input type="checkbox" name="checkbox" className="checkbox" />
+                </div>
             </div>
             <div className="form-group">
                 <button className="btn btn-block" type="submit">

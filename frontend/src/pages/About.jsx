@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom'
 // import {useSelector, useDispatch} from 'react-redux'
 // import {logout, reset} from '../features/auth/authSlice'
 
-export const About = () => {
+function About() {
     // const navigate = useNavigate()
     // const dispatch = useDispatch()
 
@@ -27,3 +27,4 @@ export const About = () => {
     </section>
   )
 }
+export default About
