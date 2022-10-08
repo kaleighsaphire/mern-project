@@ -1,7 +1,6 @@
 <h1 align="center"><img height="75px"src="https://i.imgur.com/OgwNEG6.png" title="source: imgur.com" /> Liber</h1>
 
-
-I created this website to organize my library and keep a log of the books that I read, want, and the books I loan to my friends/family that are never returned!  
+I created this website to organize my library and keep a log of the books that I read, want, and the books I loan to my friends/family that are never returned!
 
 The program uses MVC architecture and follows separation of concerns, with Javascript, React, and CSS on the front end. Node JS, Express and Mongoose on the back connecting to a Mongo Database.
 Authorization has been implemented via Json Web Token, using an email sign up.
@@ -22,11 +21,11 @@ All visuals and animations were created with 100% CSS styling.
 <li>Rating feature on journal entries.</li>
 <li>Sort Library alphabetically by genre/title/author.</li>
 <li>Custom CSS logo</li>
+<li>Sort journal entries by date / book title / rating.</li>
 </ul>
 
 <h2>Future Features</h2>
 <ul>
-<li>Sort journal entries by date / book title / author / rating.</li>
 <li>Toggle indication of whether a book has been read or not.</li>
 <li>Indication of book that has been loaned out. To who and when.</li>
 <li>About page available for view without an account.</li>
@@ -56,4 +55,3 @@ bcryptjs, colors, dotenv, express, express-async-handler, jsonwebtoken, nodemon,
 
 <h3 align="center">Loading Animation</h3>
 <p align="center"><a href="https://imgur.com/sYUPO9J"><img src="https://i.imgur.com/sYUPO9J.gif" title="source: imgur.com" /></a></p>
-

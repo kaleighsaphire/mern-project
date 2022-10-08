@@ -13,7 +13,23 @@ function Blog() {
   const [showLogForm, setShowLogForm] = useState(false)
 
   const {user} = useSelector((state) => state.auth)
-  const {logs, isLoading, isError, message} = useSelector((state) => state.logs)
+  let {logs, isLoading, isError, message} = useSelector((state) => state.logs)
+
+  const sortOptions = ["Sort by", "Rating - High to Low", "Rating - Low to High", "Title", "Date"]
+  const [selected, setSelected] = useState(sortOptions[0])
+
+
+  if (selected === 'Rating - Low to High'){
+    console.log(logs)
+    logs = logs.filter((log) => log).sort((a, b) => Number(a.rating) - Number(b.rating))
+    console.log(logs)
+  } else if (selected === 'Rating - High to Low'){
+    logs = logs.filter((log) => log).sort((a, b) => Number(b.rating) - Number(a.rating))
+  } else if (selected === 'Title'){
+    logs = logs.filter((log) => log).sort((a, b) => a.title.localeCompare(b.title))
+  } else if (selected === 'Date'){
+    logs = logs.filter((log) => log).reverse()
+  }
 
   useEffect(() => {
     if (isError) {
@@ -26,6 +42,7 @@ function Blog() {
     }
 
     dispatch(getLogs())
+    // console.log(logs)
 
     return () => {
       dispatch(reset())
@@ -51,6 +68,17 @@ function Blog() {
         onAdd={() => setShowLogForm(!showLogForm)}
         showAdd={showLogForm}
       />
+      <form className="sort-form">
+          <select className="sort-form"
+            value={selected} 
+            onChange={e => setSelected(e.target.value)}>
+            {sortOptions.map((value) => (
+              <option value={value} key={value}>
+                {value}
+              </option>
+            ))}
+          </select>
+        </form>
     {showLogForm && <LogForm onAdd={LogForm} />}
 
     <section className="content">
@@ -58,7 +86,8 @@ function Blog() {
         <div className="logs">
           {logs.map((log) => (
             <LogEntry key={log._id} log={log} />
-          )).reverse()}
+          ))}
+  
         </div>
       ) : (
       <h3>No log entries</h3>
