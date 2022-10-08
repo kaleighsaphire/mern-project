@@ -21,7 +21,7 @@ All visuals and animations were created with 100% CSS styling.
 <li>Rating feature on journal entries.</li>
 <li>Sort Library alphabetically by genre/title/author.</li>
 <li>Custom CSS logo</li>
-<li>Sort journal entries by date / book title / rating.</li>
+<li>Sort journal entries by date / author / title / rating.</li>
 </ul>
 
 <h2>Future Features</h2>

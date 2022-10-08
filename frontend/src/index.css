@@ -769,11 +769,19 @@ p {
 }
 
 .log {
-  background-color: rgb(157, 212, 197, .2);
+  background-color: rgba(164, 49, 235, 0.1);
   margin: 10px 0;
   padding: 30px 20px 25px;
   border-radius: 10px;
   position: relative;
+}
+.log-title {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+.author {
+  font-size: .8em;
+  line-height: 1.5em;
 }
 
 .log >.delete-log {

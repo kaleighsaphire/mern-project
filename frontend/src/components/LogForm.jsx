@@ -15,12 +15,27 @@ function LogForm() {
     const onSubmit = e => {
         e.preventDefault()
 
-        if (!title || !lastName || !text || !rating) {
-            toast.error("PLEASE FILL ALL AVAILABLE FIELDS", {
+        if (!title){
+            toast.error("Please enter a title", {
               position: toast.POSITION.TOP_CENTER,
               className: "alert alert-error",
-            });
-        }else{
+            })
+        } else if (!lastName){
+            toast.error("Please fill out author's last name", {
+              position: toast.POSITION.TOP_CENTER,
+              className: "alert alert-error",
+            })
+        } else if (!text){
+            toast.error("Please fill out the journal entry", {
+              position: toast.POSITION.TOP_CENTER,
+              className: "alert alert-error",
+            })
+        } else if (!rating){
+            toast.error("Please submit a rating", {
+              position: toast.POSITION.TOP_CENTER,
+              className: "alert alert-error",
+            })
+        } else {
             dispatch(createLog({title, lastName, firstName, text, rating}))
             setTitle('')
             setLastName('')

@@ -17,8 +17,8 @@ const LogEntry = ({log}) => {
         {log.rating === "4" ?<><FaStar /><FaStar /><FaStar /><FaStar /></> : ''}
         {log.rating === "5" ?<><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></> : ''}
       </div>
-      <h3>{log.title}</h3>
-      <span>{log.firstName} </span><span>{log.lastName}</span>
+      <h3 className="log-title">{log.title}</h3>
+      <span className="author">{log.firstName} </span><span className="author">{log.lastName}</span>
       <p>{log.text}</p>
       <button onClick={()=> dispatch(deleteLog(log._id))}className="delete-log"><FaRegTrashAlt /></button>
     </div>

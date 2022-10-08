@@ -15,15 +15,15 @@ function Blog() {
   const {user} = useSelector((state) => state.auth)
   let {logs, isLoading, isError, message} = useSelector((state) => state.logs)
 
-  const sortOptions = ["Sort by", "Title", "Author", "Rating-High", "Rating-Low", "Date"]
+  const sortOptions = ["Sort by", "Title", "Author", "Date", "Rating-High", "Rating-Low"]
   const [selected, setSelected] = useState(sortOptions[0])
 
 
-  if (selected === 'Rating - Low to High'){
+  if (selected === 'Rating-Low'){
     console.log(logs)
     logs = logs.filter((log) => log).sort((a, b) => Number(a.rating) - Number(b.rating))
     console.log(logs)
-  } else if (selected === 'Rating - High to Low'){
+  } else if (selected === 'Rating-High'){
     logs = logs.filter((log) => log).sort((a, b) => Number(b.rating) - Number(a.rating))
   } else if (selected === 'Title'){
     logs = logs.filter((log) => log).sort((a, b) => a.title.localeCompare(b.title))
