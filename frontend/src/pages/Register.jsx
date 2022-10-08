@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react'
 import {useSelector, useDispatch} from 'react-redux'
-import {useNavigate} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 import {toast} from 'react-toastify'
 // import {FaUser} from 'react-icons/fa'
 import {register, reset} from '../features/auth/authSlice'
@@ -27,7 +27,7 @@ function Register() {
             toast.error(message)
         }
         if (isSuccess || user){
-            navigate('/')
+            navigate('/dashboard')
         }
 
         dispatch(reset())
@@ -72,6 +72,7 @@ function Register() {
             <section className="form">
                 <form onSubmit={onSubmit}>
                     <div className="form-group">
+                        <label htmlFor="name" className="login">Name</label>
                         <input 
                             type="text" 
                             className="form-control" 
@@ -83,6 +84,7 @@ function Register() {
                         />
                     </div>
                     <div className="form-group">
+                    <label htmlFor="email" className="login">Email</label>
                         <input 
                             type="email" 
                             className="form-control" 
@@ -94,6 +96,7 @@ function Register() {
                         />
                     </div>
                     <div className="form-group">
+                    <label htmlFor="password" className="login">Password</label>
                         <input 
                             type="password" 
                             className="form-control" 
@@ -105,6 +108,7 @@ function Register() {
                         />
                     </div>
                     <div className="form-group">
+                    <label htmlFor="password2" className="login">Confirm password</label>
                         <input 
                             type="password" 
                             className="form-control" 
@@ -122,6 +126,7 @@ function Register() {
                         </button>
                     </div>
                 </form>
+                <span className="login">Already have an account? <Link to="/login" className="link">Login here.</Link></span>
             </section>
         </>
     )

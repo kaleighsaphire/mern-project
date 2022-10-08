@@ -9,6 +9,7 @@ import WishList from './pages/WishList'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import Footer from './components/Footer'
+import { About } from './pages/About'
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
         <div className='container'>
           <Header />
           <Routes>
-            <Route path='/' element={<Dashboard />} />
+            <Route path='/' element={<About />} />
+            <Route path='/dashboard' element={<Dashboard />} />
             <Route path='/blog' element={<Blog />} />
             <Route path='/library' element={<Library />} />
             <Route path='/wishlist' element={<WishList />} />

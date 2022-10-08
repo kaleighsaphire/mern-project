@@ -15,7 +15,7 @@ function Header() {
 
   return (
     <header className='header'>
-        <Link to='/'>
+        <Link to={user ? '/dashboard' : '/'}>
             <div className="logo-container">
                 <div className="cover"></div>
                 <div className="cover-cutout">

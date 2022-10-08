@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
 // import {FaSignInAlt} from 'react-icons/fa'
 import {useSelector, useDispatch} from 'react-redux'
-import {useNavigate} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 import {toast} from 'react-toastify'
 import {login, reset} from '../features/auth/authSlice'
 import Spinner from '../components/Spinner'
@@ -24,7 +24,7 @@ function Login() {
             toast.error(message)
         }
         if (isSuccess || user){
-            navigate('/')
+            navigate('/dashboard')
         }
 
         dispatch(reset())
@@ -55,12 +55,14 @@ function Login() {
   return (
         <>
             <section className="heading">
-                <h3>Login to Account</h3>
+                <h1>Login</h1>
+                <p>Sign in to view dashboard</p>
             </section>
 
             <section className="form">
                 <form onSubmit={onSubmit}>
                     <div className="form-group">
+                    <label htmlFor="email" className="login">Email</label>
                         <input 
                             type="email" 
                             className="form-control" 
@@ -72,6 +74,7 @@ function Login() {
                         />
                     </div>
                     <div className="form-group">
+                    <label htmlFor="password" className="login">Password</label>
                         <input 
                             type="password" 
                             className="form-control" 
@@ -89,6 +92,7 @@ function Login() {
                         </button>
                     </div>
                 </form>
+                <span className="login">Dont have an account? <Link to="/register" className="link">Register here.</Link></span>
             </section>
         </>
     )

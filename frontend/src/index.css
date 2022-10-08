@@ -201,6 +201,31 @@ p {
 .logo-container:hover {
   transform: scale(0.98);
 } 
+
+/*************************/
+/****************About****/
+.link {
+  color: rgb(61, 111, 96);
+}
+.link:hover {
+  color: rgb(105, 19, 127);
+}
+.login-links {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.5em;
+  margin: 20px;
+}
+.about-heading {
+  font-size: 3em;
+}
+.about-description {
+  width: 50%;
+  margin-top: 50px;
+  line-height: 1.5em;
+  transform: translate(50%);
+}
+
 /*************************/
 /****************Headings*/
 .heading {

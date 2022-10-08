@@ -18,12 +18,22 @@ function BookForm() {
     const onSubmit = e => {
         e.preventDefault()
 
-        if (!title || !author || !genre) {
-            toast.error("PLEASE FILL ALL AVAILABLE FIELDS", {
+        if (!title){
+            toast.error("Please enter a title", {
               position: toast.POSITION.TOP_CENTER,
               className: "alert alert-error",
-            });
-        }else{
+            })
+        } else if (!author){
+            toast.error("Please enter author's name", {
+              position: toast.POSITION.TOP_CENTER,
+              className: "alert alert-error",
+            })
+        } else if (!genre){
+            toast.error("Please choose a genre", {
+              position: toast.POSITION.TOP_CENTER,
+              className: "alert alert-error",
+            })
+        } else {
             location.pathname === '/library' ? dispatch(createBook({title, author, genre})) : dispatch(createBook({title, author, genre, own}))
         
             setTitle('')
