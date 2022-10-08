@@ -13,7 +13,18 @@ function Library({showAdd}) {
     const [showBookForm, setShowBookForm] = useState(false)
 
     const {user} = useSelector((state) => state.auth)
-    const {books, isLoading, isError, message} = useSelector((state) => state.books)
+    let {books, isLoading, isError, message} = useSelector((state) => state.books)
+
+    const sortOptions = ["Sort by", "Author", "Title", "Genre"]
+    const [selected, setSelected] = useState(sortOptions[0])
+
+    if (selected === 'Author'){
+      books = books.filter((book) => book.own === false).sort((a, b) => a.author.localeCompare(b.author))
+    } else if (selected === 'Title'){
+      books = books.filter((book) => book.own === false).sort((a, b) => a.title.localeCompare(b.title))
+    } else if (selected === 'Genre'){
+      books = books.filter((book) => book.own === false).sort((a, b) => a.genre.localeCompare(b.genre))
+    }
 
   useEffect(() => {
     if (isError) {
@@ -52,13 +63,24 @@ function Library({showAdd}) {
         onAdd={() => setShowBookForm(!showBookForm)}
         showAdd={showBookForm}
       />
+       <form className="sort-form">
+          <select className="sort-form"
+            value={selected} 
+            onChange={e => setSelected(e.target.value)}>
+            {sortOptions.map((value) => (
+              <option value={value} key={value}>
+                {value}
+              </option>
+            ))}
+          </select>
+        </form>
     {showBookForm && <BookForm onAdd={BookForm} />}
     <section className="book-content">
       {books.length > 0 ? (
         <div className="books">
           {books.filter((book) => book.own === false).map((book) => (
             <BookEntry key={book._id} book={book} />
-          )).reverse()}
+          ))}
         </div>
       ) : (
       <h3>Nothing in Library</h3>
