@@ -15,7 +15,7 @@ function Blog() {
   const {user} = useSelector((state) => state.auth)
   let {logs, isLoading, isError, message} = useSelector((state) => state.logs)
 
-  const sortOptions = ["Sort by", "Rating - High to Low", "Rating - Low to High", "Title", "Date"]
+  const sortOptions = ["Sort by", "Title", "Author", "Rating-High", "Rating-Low", "Date"]
   const [selected, setSelected] = useState(sortOptions[0])
 
 
@@ -29,6 +29,8 @@ function Blog() {
     logs = logs.filter((log) => log).sort((a, b) => a.title.localeCompare(b.title))
   } else if (selected === 'Date'){
     logs = logs.filter((log) => log).reverse()
+  } else if (selected === 'Author'){
+    logs = logs.filter((log) => log?.lastName).sort((a, b) => a.lastName.localeCompare(b.lastName))
   }
 
   useEffect(() => {

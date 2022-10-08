@@ -6,6 +6,8 @@ import {createLog} from '../features/logs/logSlice'
 
 function LogForm() {
     const [title, setTitle] = useState('') 
+    const [lastName, setLastName] = useState('') 
+    const [firstName, setFirstName] = useState('') 
     const [text, setText] = useState('') 
     const [rating, setRating] = useState('') 
     const dispatch = useDispatch()
@@ -13,14 +15,16 @@ function LogForm() {
     const onSubmit = e => {
         e.preventDefault()
 
-        if (!title || !text || !rating) {
+        if (!title || !lastName || !text || !rating) {
             toast.error("PLEASE FILL ALL AVAILABLE FIELDS", {
               position: toast.POSITION.TOP_CENTER,
               className: "alert alert-error",
             });
         }else{
-            dispatch(createLog({title, text, rating}))
+            dispatch(createLog({title, lastName, firstName, text, rating}))
             setTitle('')
+            setLastName('')
+            setFirstName('')
             setText('')
             setRating('')
         }
@@ -39,6 +43,24 @@ function LogForm() {
                 placeholder="Book Title"
                 value={title} 
                 onChange={(e)=>setTitle(e.target.value)} />
+                <label htmlFor="lastName"></label>
+                <input 
+                spellcheck="true"
+                type="text" 
+                name="lastName" 
+                id="lastName" 
+                placeholder="Last Name of Author"
+                value={lastName} 
+                onChange={(e)=>setLastName(e.target.value)} />
+                <label htmlFor="firstName"></label>
+                <input 
+                spellcheck="true"
+                type="text" 
+                name="firstName" 
+                id="firstName" 
+                placeholder="First Name of Author"
+                value={firstName} 
+                onChange={(e)=>setFirstName(e.target.value)} />
                 <label htmlFor="text"></label>
                 <textarea 
                 spellcheck="true"

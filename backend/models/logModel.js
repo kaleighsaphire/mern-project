@@ -11,6 +11,14 @@ const logSchema = mongoose.Schema(
         type: String,
         required: [true, 'Please add a title']
     },
+    lastName: {
+        type: String,
+        required: [true, 'Please add an Author']
+    },
+    firstName: {
+        type: String,
+         
+    },
     text: {
         type: String,
         required: [true, 'Please add a text value']

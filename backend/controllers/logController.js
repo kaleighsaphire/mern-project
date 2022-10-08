@@ -23,6 +23,8 @@ const addLog = asyncHandler(async (req, res) => {
 
     const log = await Log.create({
         title: req.body.title,
+        lastName: req.body.lastName,
+        firstName: req.body.firstName,
         text: req.body.text,
         user: req.user.id,
         rating: req.body.rating
