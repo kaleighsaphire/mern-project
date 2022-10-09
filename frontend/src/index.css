@@ -1013,6 +1013,17 @@ h6 {
   font-size: smaller;
   padding: 15px 0 0 10px;
 }
+.read {
+  font-size: xx-small;
+  color: rgb(249, 199, 79);
+  position: absolute;
+  bottom: 1px;
+  right: 2px;
+  background: none;
+}   
+/* .read:hover {
+  color: rgb(33, 227, 33);
+} */
 .delete {
   font-size: xx-small;
   color: rgb(255, 255, 255);

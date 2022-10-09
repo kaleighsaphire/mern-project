@@ -55,7 +55,13 @@ const updateBook = asyncHandler(async (req, res) => {
         throw new Error('User not authorized')
     }
 
-    const updatedBook = await Book.findByIdAndUpdate(req.params.id, req.body, {
+    const updatedBook = await Book.findByIdAndUpdate(
+        req.params.id, 
+        {
+            // own: req.body.own,
+            read: req.body.read,
+        }, 
+        {
         new: true,
     })
 

@@ -1,5 +1,5 @@
 import {useDispatch} from 'react-redux'
-import {FaRegTrashAlt} from 'react-icons/fa'
+import {FaRegTrashAlt, FaMedal} from 'react-icons/fa'
 import {deleteBook} from '../features/books/bookSlice'
 
 const BookEntry = ({book}) => {
@@ -13,6 +13,7 @@ const BookEntry = ({book}) => {
             <h3 className="book-title">{book.title}</h3>
             <h5 className="book-author">{book.author}</h5>
           </div>
+          {book.read ? <span className="read"><FaMedal /></span> : ""}
           <button onClick={()=> dispatch(deleteBook(book._id))}className="delete"><FaRegTrashAlt /></button>
         </div>
       </div>
