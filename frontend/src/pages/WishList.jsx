@@ -83,7 +83,7 @@ function Library({showAdd}) {
           ))}
         </div>
       ) : (
-      <h3>Nothing in Library</h3>
+      <h3 className="empty">Nothing in Wish List</h3>
       )}
     </section>
     </>

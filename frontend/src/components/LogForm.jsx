@@ -49,7 +49,8 @@ function LogForm() {
     <section className="form">
         <form onSubmit={onSubmit}>
             <div className="form-group">
-                <label htmlFor="title"></label>
+            <div className="form-section">
+            <label htmlFor="title"><sup>* </sup> Title :</label>
                 <input 
                 spellcheck="true"
                 type="text" 
@@ -58,16 +59,9 @@ function LogForm() {
                 placeholder="Book Title"
                 value={title} 
                 onChange={(e)=>setTitle(e.target.value)} />
-                <label htmlFor="lastName"></label>
-                <input 
-                spellcheck="true"
-                type="text" 
-                name="lastName" 
-                id="lastName" 
-                placeholder="Last Name of Author"
-                value={lastName} 
-                onChange={(e)=>setLastName(e.target.value)} />
-                <label htmlFor="firstName"></label>
+                </div>
+                <div className="form-section">
+                <label htmlFor="firstName">Author's Name :</label>
                 <input 
                 spellcheck="true"
                 type="text" 
@@ -76,7 +70,20 @@ function LogForm() {
                 placeholder="First Name of Author"
                 value={firstName} 
                 onChange={(e)=>setFirstName(e.target.value)} />
-                <label htmlFor="text"></label>
+                </div>
+                <div className="form-section">
+                <label htmlFor="lastName"><sup>* </sup> Last Name :</label>
+                <input 
+                spellcheck="true"
+                type="text" 
+                name="lastName" 
+                id="lastName" 
+                placeholder="Last Name of Author"
+                value={lastName} 
+                onChange={(e)=>setLastName(e.target.value)} />
+                </div>
+                <div className="form-section">
+                <label htmlFor="text"><sup>* </sup> Journal Entry :</label>
                 <textarea 
                 spellcheck="true"
                 type="text" 
@@ -85,6 +92,9 @@ function LogForm() {
                 placeholder="Reading log entry..."
                 value={text} 
                 onChange={(e)=>setText(e.target.value)} />
+                </div>
+                <div className="form-section">
+                <label htmlFor="text"><sup>* </sup> Rating :</label>
                 <select type="text"
                     name="rating" 
                     id="rating" 
@@ -97,6 +107,7 @@ function LogForm() {
                         <option value="4">4 - Good</option>
                         <option value="5">5 - Fantastic</option>
                 </select>
+                </div>
             </div>
             <div className="form-group">
                 <button className="btn btn-block" type="submit">

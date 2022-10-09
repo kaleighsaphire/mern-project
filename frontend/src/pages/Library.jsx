@@ -19,7 +19,7 @@ function Library({showAdd}) {
     const [selected, setSelected] = useState(sortOptions[0])
 
     if (selected === 'Author'){
-      books = books.filter((book) => book.own === true).sort((a, b) => a.author.localeCompare(b.author))
+      books = books.filter((book) => book.own === true).sort((a, b) => a.lastName.localeCompare(b.lastName))
     } else if (selected === 'Title'){
       books = books.filter((book) => book.own === true).sort((a, b) => a.title.localeCompare(b.title))
     } else if (selected === 'Genre'){
@@ -96,7 +96,7 @@ function Library({showAdd}) {
           ))}
         </div>
       ) : (
-      <h3>Nothing in Library</h3>
+      <h3 className="empty">Nothing in Library</h3>
       )}
     </section>
     </>

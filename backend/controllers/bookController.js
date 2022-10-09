@@ -16,14 +16,15 @@ const getBooks = asyncHandler(async (req, res) => {
 // @route   POST /api/books
 // @access  Private
 const addBook = asyncHandler(async (req, res) => {
-    if (!req.body.title || !req.body.author || !req.body.genre) {
+    if (!req.body.title || !req.body.lastName || !req.body.genre) {
         res.status(400)
         throw new Error('Please fill in all fields')
     }
 
     const book = await Book.create({
         title: req.body.title,
-        author: req.body.author,
+        lastName: req.body.lastName,
+        firstName: req.body.firstName,
         genre: req.body.genre,
         user: req.user.id,
         own: req.body.own,

@@ -11,7 +11,8 @@ const BookEntry = ({book}) => {
         <div className="book">
           <div className={book.genre}>
             <h3 className="book-title">{book.title}</h3>
-            <h5 className="book-author">{book.author}</h5>
+            <span className="book-author firstName">{book.firstName}</span>
+            <span className="book-author lastName">{book.lastName}</span>
           </div>
           {book.read ? <span className="read"><FaMedal /></span> : ""}
           <button onClick={()=> dispatch(deleteBook(book._id))}className="delete"><FaRegTrashAlt /></button>
