@@ -21,13 +21,13 @@ All visuals and animations were created with 100% CSS styling.
 <li>Rating feature on journal entries.</li>
 <li>Sort Library alphabetically by genre/title/author.</li>
 <li>Custom CSS logo</li>
-<li>Sort journal entries by date / author / title / rating.</li>
+<li>Sort journal entries by date / author / title / rating / read.</li>
 <li>About page available for view without an account.</li>
+<li>Badge indication of whether a book has been read or not.</li>
 </ul>
 
 <h2>Future Features</h2>
 <ul>
-<li>Toggle indication of whether a book has been read or not.</li>
 <li>Indication of book that has been loaned out. To who and when.</li>
 
 </ul>
