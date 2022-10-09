@@ -19,11 +19,11 @@ function Library({showAdd}) {
     const [selected, setSelected] = useState(sortOptions[0])
 
     if (selected === 'Author'){
-      books = books.filter((book) => book.own === false).sort((a, b) => a.author.localeCompare(b.author))
+      books = books.filter((book) => !book.own).sort((a, b) => a.author.localeCompare(b.author))
     } else if (selected === 'Title'){
-      books = books.filter((book) => book.own === false).sort((a, b) => a.title.localeCompare(b.title))
+      books = books.filter((book) => !book.own).sort((a, b) => a.title.localeCompare(b.title))
     } else if (selected === 'Genre'){
-      books = books.filter((book) => book.own === false).sort((a, b) => a.genre.localeCompare(b.genre))
+      books = books.filter((book) => !book.own).sort((a, b) => a.genre.localeCompare(b.genre))
     }
 
   useEffect(() => {
@@ -78,7 +78,7 @@ function Library({showAdd}) {
     <section className="book-content">
       {books.length > 0 ? (
         <div className="books">
-          {books.filter((book) => book.own === false).map((book) => (
+          {books.filter((book) => !book.own).map((book) => (
             <BookEntry key={book._id} book={book} />
           ))}
         </div>

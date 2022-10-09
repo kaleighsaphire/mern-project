@@ -15,16 +15,21 @@ function Library({showAdd}) {
     const {user} = useSelector((state) => state.auth)
     let {books, isLoading, isError, message} = useSelector((state) => state.books)
 
-    const sortOptions = ["Sort by", "Author", "Title", "Genre"]
+    const sortOptions = ["Sort by", "Author", "Title", "Genre", "Read", "Un-read"]
     const [selected, setSelected] = useState(sortOptions[0])
 
     if (selected === 'Author'){
-      books = books.filter((book) => book.own === true).sort((a, b) => a.lastName.localeCompare(b.lastName))
+      books = books.filter((book) => book.own).sort((a, b) => a.lastName.localeCompare(b.lastName))
     } else if (selected === 'Title'){
-      books = books.filter((book) => book.own === true).sort((a, b) => a.title.localeCompare(b.title))
+      books = books.filter((book) => book.own).sort((a, b) => a.title.localeCompare(b.title))
     } else if (selected === 'Genre'){
-      books = books.filter((book) => book.own === true).sort((a, b) => a.genre.localeCompare(b.genre))
+      books = books.filter((book) => book.own).sort((a, b) => a.genre.localeCompare(b.genre))
+    }  else if (selected === 'Read'){
+      books = books.filter((book) => book.read)
+    }  else if (selected === 'Un-read'){
+      books = books.filter((book) => !book.read)
     }
+    
     
   useEffect(() => {
     if (isError) {
