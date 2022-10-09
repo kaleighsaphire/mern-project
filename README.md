@@ -29,7 +29,6 @@ All visuals and animations were created with 100% CSS styling.
 <h2>Future Features</h2>
 <ul>
 <li>Indication of book that has been loaned out. To who and when.</li>
-
 </ul>
 
 <h2>Dependencies</h2>
