@@ -71,51 +71,51 @@ function Register() {
 
             <section className="form">
                 <form onSubmit={onSubmit}>
-                    <div className="form-group">
-                        <label htmlFor="name" className="login">Name</label>
+                    <div className="form-group form-section">
+                        <label htmlFor="name" className="login">User Name :</label>
                         <input 
                             type="text" 
                             className="form-control" 
                             id="name" 
                             name="name" 
                             value={name} 
-                            placeholder="Enter your name" 
+                            placeholder="Enter your user name..." 
                             onChange={onChange} 
                         />
                     </div>
-                    <div className="form-group">
-                    <label htmlFor="email" className="login">Email</label>
+                    <div className="form-group form-section">
+                    <label htmlFor="email" className="login">Email :</label>
                         <input 
                             type="email" 
                             className="form-control" 
                             id="email" 
                             name="email" 
                             value={email} 
-                            placeholder="Enter your email" 
+                            placeholder="Enter your email..." 
                             onChange={onChange} 
                         />
                     </div>
-                    <div className="form-group">
-                    <label htmlFor="password" className="login">Password</label>
+                    <div className="form-group form-section">
+                    <label htmlFor="password" className="login">Password :</label>
                         <input 
                             type="password" 
                             className="form-control" 
                             id="password" 
                             name="password" 
                             value={password} 
-                            placeholder="Enter password" 
+                            placeholder="Choose a password..." 
                             onChange={onChange} 
                         />
                     </div>
-                    <div className="form-group">
-                    <label htmlFor="password2" className="login">Confirm password</label>
+                    <div className="form-group form-section">
+                    <label htmlFor="password2" className="login">Confirm Password:</label>
                         <input 
                             type="password" 
                             className="form-control" 
                             id="password2" 
                             name="password2" 
                             value={password2} 
-                            placeholder="Confirm password" 
+                            placeholder="Confirm your password..." 
                             onChange={onChange} 
                             />
                     </div>

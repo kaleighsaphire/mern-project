@@ -61,27 +61,27 @@ function Login() {
 
             <section className="form">
                 <form onSubmit={onSubmit}>
-                    <div className="form-group">
-                    <label htmlFor="email" className="login">Email</label>
+                    <div className="form-group form-section">
+                    <label htmlFor="email" className="login">Email : </label>
                         <input 
                             type="email" 
                             className="form-control" 
                             id="email" 
                             name="email" 
                             value={email} 
-                            placeholder="Enter your email" 
+                            placeholder="Enter your email..." 
                             onChange={onChange} 
                         />
                     </div>
-                    <div className="form-group">
-                    <label htmlFor="password" className="login">Password</label>
+                    <div className="form-group form-section">
+                    <label htmlFor="password" className="login">Password : </label>
                         <input 
                             type="password" 
                             className="form-control" 
                             id="password" 
                             name="password" 
                             value={password} 
-                            placeholder="Enter password" 
+                            placeholder="Enter your password..." 
                             onChange={onChange} 
                         />
                     </div>
