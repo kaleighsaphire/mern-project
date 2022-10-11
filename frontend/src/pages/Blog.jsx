@@ -44,7 +44,6 @@ function Blog() {
     }
 
     dispatch(getLogs())
-    // console.log(logs)
 
     return () => {
       dispatch(reset())
