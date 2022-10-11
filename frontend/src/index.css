@@ -100,7 +100,7 @@ p, .empty {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px 20px;
   margin-bottom: 60px;
   border-radius: 10px;
   border: 4px double rgb(105, 19, 127);
@@ -139,7 +139,7 @@ p, .empty {
   position: absolute;
   height: 62.5px;
   width: 62.5px;
-  border-radius: 4px;
+  border-radius: 4px 60px 4px 4px;
   background: rgb(105, 19, 127);
   transform: rotate(-45deg);
 }
@@ -149,6 +149,7 @@ p, .empty {
   width: 60px;
   margin-top: -15px;
   margin-left: 1px;
+  border-radius: 0 60px 0 0;
   background: rgba(171, 119, 221);
   transform: rotate(-45deg);
 }
@@ -734,18 +735,15 @@ p, .empty {
   top: 10px;
   right: 15px;
 }
-
 /*************************/
 /****************Log Form*/
 sup {
   color: rgb(7, 172, 123);
 }
-.form,
-.content {
+.form {
   width: 70%;
   margin: 0 auto;
 }
-
 .form-group input,
 .form-group textarea,
 .form-group select {
@@ -758,17 +756,25 @@ sup {
   background-color: rgba(172, 237, 218, 0.1);
   caret-color: rgb(227, 33, 101);
 }
-
-.form-group label {
-  width: 25%;
-}
 .form-section {
   display: flex;
-  justify-content: space-around;
   align-items: center;
 }
+.form-group label {
+  width: 25%;
+  font-size: .9em;
+  text-align: left;
+}
 #checkbox-label {
-  margin: 0 -175px 0 -125px;
+  text-align: right;
+}
+input.checkbox {
+  width: 8%;
+}
+.form-checkbox {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 .login {
   line-height: 1.5em;
@@ -1262,12 +1268,6 @@ h6 {
 /*************************/
 /***********Media Queries*/
 
-@media (max-width: 800px) {
-  #checkbox-label {
-    margin: 0 -125px 0 -110px;
-  }
-}
-
 @media (max-width: 600px) {
   .logo-container {
     height: 30px;
@@ -1278,11 +1278,12 @@ h6 {
     height: 31.25px;
     width: 31.25px;
     border-radius: 2px;
+    border-radius: 4px 60px 4px 4px;
   }
   .cover-cutout{
     height: 30px;
     width: 30px;
-    margin: -7px 0 0 .5px;
+    margin: -6px 0 0 0;
   }
   .page-one{
     height: 22.5px;
@@ -1310,9 +1311,7 @@ h6 {
     left: 8px;
   }
   .logo {
-    font-size: 9px;
-    font-weight: 400;
-    margin: -5px -7.55px 0 0;
+   display: none;
   }
   .heading h1 {
     font-size: 2rem;
@@ -1329,12 +1328,8 @@ h6 {
   .link-container {
     font-size: .75em;
   }
-  #checkbox-label {
-    margin: 0 -100px 0 -100px;
-  }
   .form-section {
     display: block; 
-    
   }
   .form-section > input, .form-section > select, .form-section > textarea {
     width: 100%;
@@ -1363,9 +1358,6 @@ h6 {
   }
   .heading {
     margin-top: -20px;
-  }
-  #checkbox-label {
-    margin: 0 -50px 0 -10px;
   }
   .header  {
     font-size: .75em;

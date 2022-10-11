@@ -72,7 +72,7 @@ function Register() {
             <section className="form">
                 <form onSubmit={onSubmit}>
                     <div className="form-group form-section">
-                        <label htmlFor="name" className="login">User Name :</label>
+                        <label htmlFor="name" className="login">User Name:</label>
                         <input 
                             type="text" 
                             className="form-control" 
@@ -84,7 +84,7 @@ function Register() {
                         />
                     </div>
                     <div className="form-group form-section">
-                    <label htmlFor="email" className="login">Email :</label>
+                    <label htmlFor="email" className="login">Email:</label>
                         <input 
                             type="email" 
                             className="form-control" 
@@ -96,7 +96,7 @@ function Register() {
                         />
                     </div>
                     <div className="form-group form-section">
-                    <label htmlFor="password" className="login">Password :</label>
+                    <label htmlFor="password" className="login">Password:</label>
                         <input 
                             type="password" 
                             className="form-control" 

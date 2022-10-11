@@ -53,7 +53,7 @@ function BookForm() {
         <form onSubmit={onSubmit}>
             <div className="form-group">
                 <div className="form-section">
-                    <label htmlFor="title"><sup>* </sup> Title :</label>
+                    <label htmlFor="title"><sup>* </sup> Book Title:</label>
                     <input 
                     spellcheck="true"
                     type="text" 
@@ -64,27 +64,27 @@ function BookForm() {
                     onChange={(e)=>setTitle(e.target.value)} />
                 </div>
                 <div className="form-section">
-                    <label htmlFor="fistName">Author's Name :</label>
+                    <label htmlFor="fistName">Author's Name:</label>
                     <input 
                     type="text" 
                     name="firstName" 
                     id="firstName" 
-                    placeholder="First name"
+                    placeholder="First name of author..."
                     value={firstName} 
                     onChange={(e)=>setFirstName(e.target.value)} />
                 </div>
                 <div className="form-section">
-                    <label htmlFor="lastName"><sup>* </sup> Last Name :</label>
+                    <label htmlFor="lastName"><sup>* </sup> Author's Surname:</label>
                     <input 
                     type="text" 
                     name="lastName" 
                     id="lastName" 
-                    placeholder="Last name"
+                    placeholder="Last name of author..."
                     value={lastName} 
                     onChange={(e)=>setLastName(e.target.value)} />
                 </div>
                 <div className="form-section">
-                    <label htmlFor="genre"><sup>* </sup> Genre :</label>
+                    <label htmlFor="genre"><sup>* </sup> Book Genre:</label>
                     <select type="text" 
                         name="genre" 
                         id="genre" 
@@ -114,7 +114,7 @@ function BookForm() {
                 </div>
                 {location.pathname === '/library' ? 
                 <div className="form-checkbox">
-                    <label htmlFor="checkbox" id="checkbox-label">Read :</label>
+                    <label htmlFor="checkbox" id="checkbox-label">Read:</label>
                     <input 
                     type="checkbox" 
                     name="checkbox" 
