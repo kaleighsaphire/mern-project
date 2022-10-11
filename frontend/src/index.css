@@ -497,21 +497,6 @@ p {
   cursor: url('./book.png'), auto;
 }
 
-/* .book4:before,
-.book4:after {
-  position: absolute;
-  content: "";
-}
-
-.book4:after {
-  width: 20px;
-  height: 9px;
-  margin: 4px 0 0 -10px;
-  border-radius: 50%;
-  background: white;
-  box-shadow: inset 1px -1px 2px 1px rgba(0,0,0,0.4);
-} */
-
 .ribbonCut4 {
   position: absolute;
   margin: 2.5px 0 0 63px;
@@ -841,12 +826,12 @@ sup {
 }
 
 .form-group label {
-  margin: 20px 0 0 20px;
   width: 25%;
 }
 .form-section {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 #checkbox-label {
   margin: 0 -175px 0 -125px;
@@ -1361,6 +1346,14 @@ h6 {
 
 /*************************/
 /***********Media Queries*/
+
+@media (max-width: 800px) {
+
+  #checkbox-label {
+    margin: 0 -125px 0 -110px;
+  }
+}
+
 @media (max-width: 600px) {
 
   .heading h1 {
@@ -1379,5 +1372,100 @@ h6 {
   .link-container {
     font-size: .75em;
   }
+  #checkbox-label {
+    margin: 0 -100px 0 -100px;
+  }
+  .form-section {
+    display: block; 
+    
+  }
+  .form-section > input, .form-section > select {
+    width: 100%;
+  }
+  .btn {
+  padding: 5px 10px;
+  font-size: 10px;
+  font-weight: 700;
+  }
 }
 
+@media (max-width: 475px) {
+  .tote-container {
+    margin-top: -60px;
+    margin-bottom: 60px;
+  }
+  select {
+    font-size: .75em;
+  }
+  .heading {
+    margin-top: -20px;
+  }
+  #checkbox-label {
+    margin: 0 -50px 0 -10px;
+  }
+  .logo-container {
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    margin-bottom: 2.5px;
+  }
+  .cover {
+    height: 31.25px;
+    width: 31.25px;
+    border-radius: 2px;
+  }
+  .cover-cutout{
+ 
+    height: 30px;
+    width: 30px;
+    margin-top: -7px;
+    margin-left: 1px;
+  }
+  .page-one{
+    height: 22.5px;
+    width: 22.5px;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    top: 4.5px;
+    left: 2.5px;
+
+  }
+  .page-two{
+    height: 20px;
+    width: 20px;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    top: 4.5px;
+    left: 5.5px;
+  }
+  .page-three{
+    height: 17.5px;
+    width: 17.5px;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    top: 4.5px;
+    left: 8px;
+  }
+  .logo {
+    font-size: 7px;
+    font-weight: 400;
+    margin: -5px -7.55px 0 0;
+  }
+  .header  {
+    font-size: .75em;
+  }
+  .btn {
+    padding: 5px 5px;
+    font-size: 10px;
+  }
+  .form-section, #checkbox-label {
+      font-size: .8em;
+  }
+  .form-group {
+    margin: 75px 0 0 0;
+  }
+  .btn-block {
+    margin-top: -50px;
+  }
+
+}
