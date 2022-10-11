@@ -892,14 +892,14 @@ h6 {
 .book {
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
-  /* margin: 5px; */
+  margin: 5px;
   width:100px;
   height: 148px; 
   font-size: .8rem;
   border-bottom: 4px solid rgb(229, 227, 227);
   border-right: 3px inset rgb(224, 224, 223);
   border-radius: 5px 4px 3px 6px;
-  background-image: linear-gradient(to right,rgba(224, 199, 240, 0.3) 100px, transparent 100px);   
+  /* background-image: linear-gradient(to right,rgba(255, 255, 255, 0.3) 100px, transparent 100px);    */
   box-shadow: 0px -2px 5px -1px rgba(0,0,0,0.5);
 }
 .book-title {
@@ -915,7 +915,7 @@ h6 {
   padding-left: 10px;
 }
 .read {
-  color: rgb(249, 199, 79);
+  color: rgb(0, 0, 0);
   position: absolute;
   top: 1px;
   left: 11px;
@@ -936,116 +936,116 @@ h6 {
 /*************************/
 /*************Book Genres*/
 .Adventure {
-  color: rgb(98, 78, 232);
+  background-color: rgb(168, 160, 221);
   height: 144px;
   border-radius: 5px 0 0 6px;
-  background-image: linear-gradient(to right,rgb(98, 78, 232, .8) 8px, rgb(62, 37, 227) 10px, transparent 10px);
+  background-image: linear-gradient(to right,rgba(123, 107, 225, 0.8) 8px, rgb(93, 72, 227) 10px, transparent 10px);
 }
 .Biography {
-  color: rgb(255, 165, 0);
+  background-color: rgb(235, 202, 142);
   height: 144px;
   border-radius: 5px 0 0 6px;
-  background-image: linear-gradient(to right,rgb(255, 165, 0, .8) 8px, rgba(230, 129, 35) 10px, transparent 10px);
+  background-image: linear-gradient(to right,rgba(244, 187, 82, 0.8) 8px, rgb(228, 148, 73) 10px, transparent 10px);
 }
 .Classic {
-  color: rgb(215, 55, 55);
+  background-color: rgb(210, 138, 138);
   height: 144px;
   border-radius: 5px 0 0 6px;
-  background-image: linear-gradient(to right,rgb(215, 55, 55, .8) 8px, rgb(215, 55, 55) 10px, transparent 10px);
+  background-image: linear-gradient(to right,rgba(206, 88, 88, 0.8) 8px, rgb(215, 55, 55) 10px, transparent 10px);
 }
 .Comedy {
-  color: rgb(164, 194, 103);
+  background-color: rgb(185, 197, 159);
   height: 144px;
   border-radius: 5px 0 0 6px;
   background-image: linear-gradient(to right,rgb(164, 194, 103, .8) 8px, rgb(109, 192, 45) 10px, transparent 10px);
 }
 .Drama {
-  color: rgb(255, 165, 0);
+  background-color: rgb(245, 233, 125);
   height: 144px;
   border-radius: 5px 0 0 6px;
-  background-image: linear-gradient(to right,rgb(255, 165, 0, .8) 8px, rgba(230, 129, 35) 10px, transparent 10px);
+  background-image: linear-gradient(to right,rgba(255, 230, 0, 0.8) 8px, rgb(230, 178, 35) 10px, transparent 10px);
 }
 .Fantasy {
-  color: rgb(200, 146, 224);
+  background-color: rgb(206, 173, 220);
   height: 144px;
   border-radius: 5px 0 0 6px;
-  background-image: linear-gradient(to right,rgb(200, 146, 224, .8) 8px, rgba(169, 45, 222) 10px, transparent 10px);
+  background-image: linear-gradient(to right,rgb(200, 146, 224, .8) 8px, rgb(150, 108, 167) 10px, transparent 10px);
 
 }
 .Graphic-Novel {
-  color: rgb(83, 83, 82);
+  background-color: rgb(179, 179, 178);
   height: 144px;
   border-radius: 5px 0 0 6px;
-  background-image: linear-gradient(to right,rgb(83, 83, 82, .8) 8px, rgb(17, 17, 17)0px, transparent 10px);
+  background-image: linear-gradient(to right,rgba(110, 110, 109, 0.8) 8px, rgb(17, 17, 17)0px, transparent 10px);
 }
 .History {
-  color: rgb(249, 199, 79);
+  background-color: rgb(241, 177, 98);
   height: 144px;
   border-radius: 5px 0 0 6px;
-  background-image: linear-gradient(to right,rgb(249, 199, 79, .8) 8px, rgb(246, 176, 11) 10px, transparent 10px);
+  background-image: linear-gradient(to right,rgba(244, 154, 18, 0.8) 8px, rgb(237, 170, 53) 10px, transparent 10px);
 }
 .Literary-Fiction {
-  color: rgb(59, 226, 232);
+  background-color: rgb(169, 226, 228);
   height: 144px;
   border-radius: 5px 0 0 6px;
-  background-image: linear-gradient(to right,rgb(59, 226, 232, .8) 8px, rgb(9, 199, 206) 10px, transparent 10px);
+  background-image: linear-gradient(to right,rgba(92, 221, 226, 0.8) 8px, rgb(9, 199, 206) 10px, transparent 10px);
 }
 .Mystery {
-  color: rgb(159, 60, 60);
+  background-color: rgb(247, 160, 160);
   height: 144px;
   border-radius: 5px 0 0 6px;
-  background-image: linear-gradient(to right,rgb(159, 60, 60, .8) 8px, rgb(157, 5, 5) 10px, transparent 10px);
+  background-image: linear-gradient(to right,rgba(236, 113, 113, 0.8) 8px, rgb(228, 58, 58) 10px, transparent 10px);
 }
 .Non-Fiction {
-  color: rgb(137, 139, 214);
+  background-color: rgb(157, 158, 181);
   height: 144px;
   border-radius: 5px 0 0 6px;
-  background-image: linear-gradient(to right,rgb(137, 139, 214, .8) 8px, rgb(59, 65, 215) 10px, transparent 10px);
+  background-image: linear-gradient(to right,rgba(103, 105, 160, 0.8) 8px, rgb(75, 76, 123) 10px, transparent 10px);
 }
 .Philosophy {
-  color: rgb(249, 199, 79);
+  background-color: rgb(203, 165, 241);
   height: 144px;
   border-radius: 5px 0 0 6px;
-  background-image: linear-gradient(to right,rgb(249, 199, 79, .8) 8px, rgb(246, 176, 11) 10px, transparent 10px);
+  background-image: linear-gradient(to right,rgba(172, 114, 231, 0.8) 8px, rgb(154, 85, 222) 10px, transparent 10px);
 }
 .Poetry {
-  color: rgb(223, 142, 209);
+  background-color: rgb(222, 185, 216);
   height: 144px;
   border-radius: 5px 0 0 6px;
-  background-image: linear-gradient(to right,rgb(223, 142, 209, .8) 8px, rgb(233, 100, 211) 10px, transparent 10px);
+  background-image: linear-gradient(to right,rgb(223, 142, 209, .8) 8px, rgb(212, 130, 199) 10px, transparent 10px);
 }
 .Romance {
-  color: rgb(209, 63, 175); 
+  background-color: rgb(201, 133, 161); 
   height: 144px;
   border-radius: 5px 0 0 6px;
-  background-image: linear-gradient(to right,rgb(209, 63, 175, .8) 8px, rgb(195, 61, 173) 10px, transparent 10px);
+  background-image: linear-gradient(to right,rgba(213, 99, 147, 0.8) 8px, rgb(160, 64, 126) 10px, transparent 10px);
 }
 .Science {
-  color: rgb(140, 205, 147);
+  background-color: rgb(201, 237, 204);
   height: 144px;
   border-radius: 5px 0 0 6px;
   background-image: linear-gradient(to right,rgb(140, 205, 147, .8) 8px, rgb(70, 206, 125) 10px, transparent 10px);
 }
 .Self-Help {
-  color: rgb(105, 106, 189);
+  background-color: rgb(180, 181, 242);
   height: 144px;
   border-radius: 5px 0 0 6px;
-  background-image: linear-gradient(to right,rgb(105, 106, 189, .8) 8px, rgb(33, 36, 193) 10px, transparent 10px);
+  background-image: linear-gradient(to right,rgba(121, 123, 225, 0.8) 8px, rgb(94, 97, 226) 10px, transparent 10px);
 }
 .Short-Stories {
-  color: rgb(249, 116, 79);
+  background-color: rgb(245, 166, 144);
   height: 144px;
   border-radius: 5px 0 0 6px;
-  background-image: linear-gradient(to right,rgb(249, 116, 79, .8) 8px, rgb(242, 85, 41) 10px, transparent 10px);
+  background-image: linear-gradient(to right,rgba(244, 133, 103, 0.8) 8px, rgb(246, 114, 78) 10px, transparent 10px);
 }
 .Thriller {
-  color: rgb(218, 5, 5);
+  background-color: rgb(244, 126, 126);
   height: 144px;
   border-radius: 5px 0 0 6px;
-  background-image: linear-gradient(to right,rgb(218, 5, 5, .8) 8px, rgb(151, 3, 3) 10px, transparent 10px);
+  background-image: linear-gradient(to right,rgba(215, 60, 60, 0.8) 8px, rgb(155, 37, 37) 10px, transparent 10px);
 }
 .Young {
-  color: rgb(106, 198, 194);
+  background-color: rgb(194, 221, 219);
   height: 144px;
   border-radius: 5px 0 0 6px;
   background-image: linear-gradient(to right,rgb(106, 198, 194, .8) 8px, rgb(106, 198, 194) 10px, transparent 10px);

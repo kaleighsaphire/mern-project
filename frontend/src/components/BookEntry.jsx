@@ -15,7 +15,7 @@ const BookEntry = ({book}) => {
             <span className="book-author lastName">{book.lastName}</span>
           </div>
           {book.read ? <span className="read"><FaMedal /></span> : ""}
-          <button onClick={()=> dispatch(deleteBook(book._id))}className="delete"><FaRegTrashAlt /></button>
+          <button aria-label="Delete" onClick={()=> dispatch(deleteBook(book._id))}className="delete"><FaRegTrashAlt /></button>
         </div>
       </div>
     </>
