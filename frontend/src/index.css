@@ -23,7 +23,6 @@ time, mark, audio, video {
 	vertical-align: baseline;
   scroll-behavior: smooth;
 }
-
 body {
 	line-height: 1;
 }
@@ -59,16 +58,13 @@ body {
   min-height: 100vh;
   background-color: rgb(253, 253, 253);
 }
-
 a {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
-
-p {
+p, .empty {
   line-height: 1.5;
 }
-
 /*************************/
 /**********Main Containers*/
 .container {
@@ -97,9 +93,6 @@ p {
   border: 4px double rgb(244, 247, 246);
   background-color: rgb(157, 212, 197);
 }
-.empty {
-  line-height: 1.5em;
-}
 
 /*************************/
 /******************Header*/
@@ -107,7 +100,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px;
+  padding: 20px;
   margin-bottom: 60px;
   border-radius: 10px;
   border: 4px double rgb(105, 19, 127);
@@ -119,21 +112,17 @@ p {
   align-items: center;
   justify-content: space-between;
 }
-
 .header ul li {
   margin-left: 20px;
 }
-
 .header ul li a {
   display: flex;
   align-items: center;
   user-select: none;
 }
-
 .header ul li a:hover {
   color: rgb(105, 19, 127);
 }
-
 /*************************/
 /********************Logo*/
 .logo-container {
@@ -204,7 +193,6 @@ p {
 .logo-container:hover {
   transform: scale(0.98);
 } 
-
 /*************************/
 /****************Headings*/
 .heading {
@@ -216,13 +204,11 @@ p {
 .heading>p {
   color: rgb(61, 111, 96, .9);
 }
-
 .library{
   position: absolute;
   font-size: .9em;
   margin: 0 5px;
  }
-
 /*************************/
 /******************Footer*/
 .footer {
@@ -244,12 +230,10 @@ p {
 
 /*************************/
 /***************Open Book*/
-
 .journal-link {
   position: relative;
   padding: 20px 10px;
 }
-
 .journal {
   color: rgba(255, 255, 255);
   line-height: 1.2em;
@@ -265,7 +249,6 @@ p {
   font-size: 13px;
   text-indent: 0;
 }
-
 .open-book {
   transform-style: preserve-3d;
   position: relative;
@@ -274,7 +257,6 @@ p {
   cursor: pointer;
   backface-visibility: visible;
 }
-
 .front, .back, .page1, .page2, .page3, .page4, .page5, .page6 {
   transform-style: preserve-3d;
   position: absolute;
@@ -295,29 +277,23 @@ p {
 .front, .back {
   background: rgba(146, 69, 165, 0.7);
 }
-
 .front, .page1, .page3, .page5 {
   border-bottom-right-radius: .5em;
   border-top-right-radius: .5em;
 }
-
 .back, .page2, .page4, .page6 {
   border-bottom-right-radius: .5em;
   border-top-right-radius: .5em;
 }
-
 .page1, .page2 { 
   background: rgb(239, 239, 239);
 }
-
 .page3, .page4 {
   background: rgb(245, 245, 245);
 }
-
 .page5, .page6 {
   background: rgb(250, 250, 250);
 }
-
 .open-book:hover .front {
   transform: rotateY(-160deg) scale(1.1);
   box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
@@ -325,51 +301,43 @@ p {
   border-bottom: none;
   cursor: url('./pencil.png'), auto;
 }
-
 .open-book:hover .page1 {
   transform: rotateY(-150deg) scale(1.1);
   box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
   cursor: url('./pencil.png'), auto;
 }
-
 .open-book:hover .page2 {
   transform: rotateY(-30deg) scale(1.1);
   box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
   cursor: url('./pencil.png'), auto;
 }
-
 .open-book:hover .page3 {
   transform: rotateY(-140deg) scale(1.1);
   box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
   cursor: url('./pencil.png'), auto;
 }
-
 .open-book:hover .page4 {
   transform: rotateY(-40deg) scale(1.1);
   box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
   cursor: url('./pencil.png'), auto;
 }
-
 .open-book:hover .page5 {
   transform: rotateY(-130deg) scale(1.1);
   box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
   box-shadow: inset 0px 0px 8px 1px rgba(0,0,0,0.2);
   cursor: url('./pencil.png'), auto;
 }
-
 .open-book:hover .page6 {
   transform: rotateY(-50deg) scale(1.1);
   box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
   cursor: url('./pencil.png'), auto;
 }
-
 .open-book:hover .back {
   transform: rotateY(-20deg) scale(1.1);
   cursor: url('./pencil.png'), auto;
 }
 /*************************/
 /**************Book Stack*/
-
 .bg {
   display: flex;
   flex-direction: column;
@@ -378,7 +346,6 @@ p {
   border-radius: 10px;
   background-color: rgb(61, 111, 96);
 }
-
 .book1 {
   position: relative;
   height:15px;
@@ -389,14 +356,12 @@ p {
   background: rgb(255, 255, 240);  
   cursor: url('./book.png'), auto;
 }
-
 .bookCut { 
   width: 2px;
   height: 11px;
   margin: 0 0 0 98%;
   background: rgb(61, 111, 96);
 }
-
 .ribbon1 {
   position: absolute;
   margin: 6px 0 0 5px;
@@ -404,7 +369,6 @@ p {
   width:10px;
   background: rgb(105, 106, 189);
 }
-
 .book2 {
   position: relative;
   height:20px;
@@ -414,7 +378,6 @@ p {
   box-shadow: inset 5px -2px 14px 1px rgba(0,0,0,0.5);
   cursor: url('./book.png'), auto;
 }
-
 .ribbonCut1 {
   position: absolute;
   margin: 2px 0 0 1px;
@@ -422,7 +385,6 @@ p {
 	border-right: 5px solid transparent;
 	border-top: 6px solid rgb(105, 106, 189);
 }
-
 .ribbonCut2{
   position: absolute;
   margin: 2px 0 0 6px;
@@ -430,7 +392,6 @@ p {
 	border-right: 0px solid rgb(105, 106, 189);
 	border-top: 6px solid rgb(105, 106, 189);
 }
-
 .ribbonCut3 {
   position: absolute;
   margin: 0 0 0 1px;
@@ -438,13 +399,11 @@ p {
   width: 10px;
   background: rgb(105, 106, 189);
 }
-
 .book2:before,
 .book2:after {
   content: "";
   position: absolute;
 }
-
 .book2:before {
   height: 20px;
   width: 30px;
@@ -452,7 +411,6 @@ p {
   border-left: 10px double rgb(125, 90, 140);
   border-right: 10px double rgb(125, 90, 140);
 }
-
 .book2:after {
   width: 14px;
   height: 10px;
@@ -460,7 +418,6 @@ p {
   background: rgb(255, 255, 255);
   box-shadow: inset 1px -1px 2px 1px rgba(0,0,0,0.2);
 }
-
 .book3 {
   position: relative;
   height:15px;
@@ -470,15 +427,12 @@ p {
   border-left-style: none;
   background: rgb(255, 255, 240);
   cursor: url('./book.png'), auto;
-  
 }
-
 .bookCut3 { 
   width: 2.5px;
   height: 10px;
   background:rgb(61, 111, 96);
 }
-
 .ribbon3 {
   position: absolute;
   height:12px;
@@ -486,7 +440,6 @@ p {
   margin: 5px 0 0 50px;
   background: rgb(128, 128, 141);
 }
-
 .book4 {
   position: relative;
   height:17px;
@@ -496,7 +449,6 @@ p {
   box-shadow: inset 3px -2px 8px 1px rgba(84, 83, 83, 0.5);
   cursor: url('./book.png'), auto;
 }
-
 .ribbonCut4 {
   position: absolute;
   margin: 2.5px 0 0 63px;
@@ -504,7 +456,6 @@ p {
 	border-right: 5px solid transparent;
 	border-top: 6px solid rgb(128, 128, 141);
 }
-
 .ribbonCut5 {
   position: absolute;
   margin: 2.5px 0 0 68px;
@@ -512,7 +463,6 @@ p {
 	border-right: 0px solid rgb(128, 128, 141);
 	border-top: 6px solid rgb(128, 128, 141);
 }
-
 .ribbonCut6 {
   position: absolute;
   margin: 0 0 0 63px;
@@ -520,7 +470,6 @@ p {
   width: 10px;
   background: rgb(128, 128, 141);
 }
-
 .book5 {
   position: relative;
   height:20px;
@@ -530,13 +479,11 @@ p {
   box-shadow: inset 3px 2px 8px 1px rgba(0,0,0,0.5); 
   cursor: url('./book.png'), auto;
 }
-
 .book5:before,
 .book5:after {
   position: absolute;
   content: '';
 }
-
 .book5:before {
   height: 20px;
   width: 40px;
@@ -544,7 +491,6 @@ p {
   border-left: 10px double #fff;
   border-right: 10px double #fff;
 }
-
 .book5:after {
   width: 15px;
   height: 10px;
@@ -552,7 +498,6 @@ p {
   background: white;
   box-shadow: inset 1px -1px 2px 1px rgba(0,0,0,0.1);
 }
-
 .book6 {
   position: relative;
   height: 15px;
@@ -563,13 +508,11 @@ p {
   background: rgb(255, 255, 240);
   cursor: url('./book.png'), auto;  
 }
-
 .bookCut6 { 
   width: 2.5px;
   height: 10px;
   background: rgb(61, 111, 96);
 }
-
 .ribbon6 {
   position: absolute;
   height:12px;
@@ -577,7 +520,6 @@ p {
   margin: 7px 0 0 50px;
   background: rgb(223, 142, 209);
 }
-
 .book7 {
   position: relative;
   height: 20px;
@@ -588,20 +530,17 @@ p {
   box-shadow: inset 3px -2px 6px 1px rgba(0,0,0,0.5);
   cursor: url('./book.png'), auto;
 }
-
 .book7:before,
 .book7:after {
   position: absolute;
   content: "";
 }
-
 .book7:before {
   height: 20px;
   width: 47px;
   left: 5px;
   border-left: 10px double rgb(255, 255, 255);
 }
-
 .book7:after {
   background: rgb(255, 255, 255);
   margin: 4px 0 0 35px;
@@ -610,7 +549,6 @@ p {
   border-radius: 6px;
   box-shadow: inset 1px -1px 2px 1px rgba(0,0,0,0.1);
 }
-
 .ribbonCut7 {
   position: absolute;
   margin: 2px 0 0 58px;
@@ -618,7 +556,6 @@ p {
 	border-right: 5px solid transparent;
 	border-top: 6px solid rgb(223, 142, 209);
 }
-
 .ribbonCut8 {
   position: absolute;
   margin: 2px 0 0 63px;
@@ -626,7 +563,6 @@ p {
 	border-right: 0px solid rgb(223, 142, 209);
 	border-top: 6px solid rgb(223, 142, 209);
 }
-
 .ribbonCut9 {
   position: absolute;
   height: 2.5px;
@@ -634,14 +570,12 @@ p {
   margin: 0 0 0 58px;
   background: rgb(223, 142, 209);
 }
-
 /*************************/
 /****************Bookmark*/
 .bookmark-container {
   position: relative;
   display: flex;
   align-items: center;
-
 }
 .book-cover {
   position: absolute;
@@ -858,16 +792,12 @@ sup {
   border: 1px solid rgb(7, 172, 123);
   border-radius: 5px;
   color: rgb(255, 255, 255);
-  font-size: 13px;
-  font-weight: 700;
   cursor: pointer;
-  text-align: center;
   appearance: button;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .btn:hover {
   background-color: rgb(227, 33, 101, 0.7);
   border: 1px solid rgb(164, 114, 193);
@@ -876,11 +806,9 @@ sup {
 .btn-block {
   width: 100%;
 }
-
 .heading>.btn{
   margin: -30px 0 10px auto;
 }
-
 /*************************/
 /**************Book Shelf*/
 .shelf {
@@ -895,13 +823,11 @@ h6 {
   margin: 15px 0 0 3px;
   user-select: none;
 }
-
 .bookL {
   height: 100px;
   width: 25px;
   background: rgb(249, 131, 72);  
 }
-
 .bookI {
   position: absolute;
   height: 75px;
@@ -909,7 +835,6 @@ h6 {
   margin: 25px 0 0 25px;
   background: rgb(249, 199, 79); 
 }
-
 .bookB {
   position: absolute;
   height: 85px;
@@ -917,7 +842,6 @@ h6 {
   margin: 15px 0 0 45px;
   background: rgb(144, 190, 109); 
 }
-
 .bookR {
   position: absolute;
   height: 80px;
@@ -925,7 +849,6 @@ h6 {
   margin: 20px 0 0 75px;
   background: rgb(77, 144, 142); 
 }
-
 .bookA {
   position: absolute;
   height: 65px;
@@ -933,7 +856,6 @@ h6 {
   margin: 35px 0 0 100px;
   background: rgb(87, 117, 144); 
 }
-
 .bookR2 {
   position: absolute;
   height: 90px;
@@ -941,7 +863,6 @@ h6 {
   margin: 10px 0 0 125px;
   background: rgb(39, 125, 161); 
 }
-
 .bookY {
   position: absolute;
   height: 80px;
@@ -965,7 +886,7 @@ h6 {
 .book {
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 5px;
+  /* margin: 5px; */
   width:100px;
   height: 148px; 
   font-size: .8rem;
@@ -975,7 +896,6 @@ h6 {
   background-image: linear-gradient(to right,rgba(224, 199, 240, 0.3) 100px, transparent 100px);   
   box-shadow: 0px -2px 5px -1px rgba(0,0,0,0.5);
 }
-
 .book-title {
   word-break: break-word;
   padding: 20px 0 5px 10px;
@@ -995,9 +915,6 @@ h6 {
   left: 11px;
   background: none;
 }   
-/* .read:hover {
-  color: rgb(33, 227, 33);
-} */
 .delete {
   font-size: xx-small;
   color: rgb(255, 255, 255);
@@ -1010,7 +927,6 @@ h6 {
 .delete:hover {
   color: rgb(227, 33, 101);
 }
-
 /*************************/
 /*************Book Genres*/
 .Adventure {
@@ -1238,7 +1154,6 @@ h6 {
   margin-top: -5px;
   z-index: 2;
 }
-
 #shadow {
   height: 3px;
   width: 75px;
@@ -1348,66 +1263,16 @@ h6 {
 /***********Media Queries*/
 
 @media (max-width: 800px) {
-
   #checkbox-label {
     margin: 0 -125px 0 -110px;
   }
 }
 
 @media (max-width: 600px) {
-
-  .heading h1 {
-    font-size: 2rem;
-  }
-
-  .heading p {
-    font-size: 1.5rem;
-  }
-  p {
-    font-size: .8rem;
-  }
-  .logo, a {
-    font-size: .75em;
-  }
-  .link-container {
-    font-size: .75em;
-  }
-  #checkbox-label {
-    margin: 0 -100px 0 -100px;
-  }
-  .form-section {
-    display: block; 
-    
-  }
-  .form-section > input, .form-section > select {
-    width: 100%;
-  }
-  .btn {
-  padding: 5px 10px;
-  font-size: 10px;
-  font-weight: 700;
-  }
-}
-
-@media (max-width: 475px) {
-  .tote-container {
-    margin-top: -60px;
-    margin-bottom: 60px;
-  }
-  select {
-    font-size: .75em;
-  }
-  .heading {
-    margin-top: -20px;
-  }
-  #checkbox-label {
-    margin: 0 -50px 0 -10px;
-  }
   .logo-container {
     height: 30px;
     width: 30px;
-    margin-left: 10px;
-    margin-bottom: 2.5px;
+    margin: 0 0 2.5px 10px;
   }
   .cover {
     height: 31.25px;
@@ -1415,11 +1280,9 @@ h6 {
     border-radius: 2px;
   }
   .cover-cutout{
- 
     height: 30px;
     width: 30px;
-    margin-top: -7px;
-    margin-left: 1px;
+    margin: -7px 0 0 .5px;
   }
   .page-one{
     height: 22.5px;
@@ -1447,9 +1310,62 @@ h6 {
     left: 8px;
   }
   .logo {
-    font-size: 7px;
+    font-size: 9px;
     font-weight: 400;
     margin: -5px -7.55px 0 0;
+  }
+  .heading h1 {
+    font-size: 2rem;
+  }
+  .heading p {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: .8rem;
+  }
+  .logo, a {
+    font-size: .75em;
+  }
+  .link-container {
+    font-size: .75em;
+  }
+  #checkbox-label {
+    margin: 0 -100px 0 -100px;
+  }
+  .form-section {
+    display: block; 
+    
+  }
+  .form-section > input, .form-section > select, .form-section > textarea {
+    width: 100%;
+  }
+  .btn {
+  padding: 5px 10px;
+  font-size: 10px;
+  }
+}
+@media (max-width: 475px) {
+  .form-group.form-section{
+    margin-top: 0;
+  }
+  span.login {
+    font-size: .85em;
+    line-height: 1.9em;
+  } .login-label {
+    font-size: 1.5em;
+  }
+  .tote-container {
+    margin-top: -60px;
+    margin-bottom: 60px;
+  }
+  select {
+    font-size: .75em;
+  }
+  .heading {
+    margin-top: -20px;
+  }
+  #checkbox-label {
+    margin: 0 -50px 0 -10px;
   }
   .header  {
     font-size: .75em;
@@ -1467,5 +1383,16 @@ h6 {
   .btn-block {
     margin-top: -50px;
   }
-
+}
+@media (max-width: 475px), (max-height: 785px) {
+  .about_page{
+    width:300px;
+    height:500px;
+  }
+  .about_page:after{
+    left:-11%;
+  }
+  .about-heading {
+    font-size: 2em;
+  }
 }
