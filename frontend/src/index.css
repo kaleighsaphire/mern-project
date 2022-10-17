@@ -945,7 +945,7 @@ h6 {
   border-right: 3px inset rgb(224, 224, 223);
   border-radius: 5px 4px 3px 6px;
   /* background-image: linear-gradient(to right,rgba(255, 255, 255, 0.3) 100px, transparent 100px);    */
-  box-shadow: 0px -2px 5px -1px rgba(0,0,0,0.5);
+  box-shadow: 0px -1px 5px -1px rgba(0,0,0,0.5);
 }
 .book-title {
   word-break: break-word;
@@ -960,11 +960,14 @@ h6 {
   padding-left: 10px;
 }
 .read {
-  color: rgb(0, 128, 255);
+  color: rgb(246, 240, 75);
+  font-size: large;
   position: absolute;
-  top: 1px;
-  left: 11px;
+  top: -18px;
+  left: 12px;
   background: none;
+  transform: rotate(180deg);
+  z-index: -1;
 } 
 .eBook {
   color: rgb(255, 255, 255);
@@ -983,7 +986,7 @@ h6 {
   background: none;
 }   
 .delete:hover {
-  color: rgb(227, 33, 101);
+  color: rgb(1, 1, 1);
 }
 /*************************/
 /*************Book Genres*/

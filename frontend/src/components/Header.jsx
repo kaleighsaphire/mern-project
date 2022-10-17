@@ -30,7 +30,7 @@ function Header() {
             {user ? (
                 <>
                 <div class="dropdown">
-                        <button class="dropbtn">Links  
+                        <button class="dropbtn">Visit  
                         <FaChevronDown className='down' />
                         </button>
                         <div class="dropdown-content">
