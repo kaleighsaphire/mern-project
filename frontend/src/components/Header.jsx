@@ -1,5 +1,6 @@
 import {Link, useNavigate} from 'react-router-dom'
 import {useSelector, useDispatch} from 'react-redux'
+import {FaChevronDown} from 'react-icons/fa'
 import {logout, reset} from '../features/auth/authSlice'
 
 function Header() {
@@ -26,33 +27,41 @@ function Header() {
             <div className="logo"><span>IBER</span></div>
             </div>
         </Link>
-        <ul>
             {user ? (
                 <>
-                    <li>
-                        <Link to='/blog'>Journal</Link>
-                    </li>
-                    <li>
-                        <Link to='/library'>Library</Link>
-                    </li>
-                    <li>
-                        <Link to='/wishlist'>Wish List</Link>
-                    </li>
-                    <li>
-                        <button className='btn' onClick={onLogout}>Logout</button>
-                    </li>
+                <div class="dropdown">
+                        <button class="dropbtn">Links  
+                        <FaChevronDown className='down' />
+                        </button>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li>
+                                    <Link to='/blog'>Journal</Link>
+                                </li>
+                                <li>
+                                    <Link to='/library'>Library</Link>
+                                </li>
+                                <li>
+                                    <Link to='/wishlist'>Wish List</Link>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+                <button className='btn' onClick={onLogout}>Logout</button>
                 </>
             ) : (
                 <>
+                <ul className="logout-links">
                     <li>
-                        <Link to='/login'>Login</Link>
+                        <Link to='/login' className='logout-links'>Login</Link>
                     </li>
                     <li>
-                        <Link to='/register'>Register</Link>
+                        <Link to='/register' className='logout-links'>Register</Link>
                     </li>
+                    </ul>
                 </>
             )}           
-        </ul>
+   
     </header>
   )
 }
