@@ -24,6 +24,7 @@ All visuals and animations were created with 100% CSS styling.
 <li>Sort journal entries by date / author / title / rating / read.</li>
 <li>About page available for view without an account.</li>
 <li>Badge indication of whether a book has been read or not.</li>
+<li>Charging indication of whether a book copy is digital.</li>
 </ul>
 
 <h2>Future Features</h2>

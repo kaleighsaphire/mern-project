@@ -29,6 +29,10 @@ const bookSchema = mongoose.Schema(
     read: {
         type: Boolean,
         default: false,
+    },
+    eBook: {
+        type: Boolean,
+        default: false,
     }
     }, 
     {timestamps: true}

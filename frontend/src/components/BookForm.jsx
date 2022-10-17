@@ -12,6 +12,7 @@ function BookForm() {
     const [genre, setGenre] = useState('')
     const [own] = useState(Boolean)
     const [read, setRead] = useState(Boolean)
+    const [eBook, setEBook] = useState(Boolean)
 
 
     const dispatch = useDispatch()
@@ -37,13 +38,14 @@ function BookForm() {
               className: "alert alert-error",
             })
         } else {
-            location.pathname === '/library' ? dispatch(createBook({title, firstName, lastName, genre, read})) : dispatch(createBook({title, firstName, lastName, genre, own}))
+            location.pathname === '/library' ? dispatch(createBook({title, firstName, lastName, genre, read, eBook})) : dispatch(createBook({title, firstName, lastName, genre, own}))
             
             setTitle('')
             setFirstName('')
             setLastName('')
             setGenre('')
             setRead(true)
+            setEBook(true)
         }
         
     }
@@ -112,6 +114,17 @@ function BookForm() {
                             <option value="Young Adult">Young Adult</option>
                     </select>
                 </div>
+                {location.pathname === '/library' ?
+                <div className="form-checkbox">
+                    <label htmlFor="checkbox" id="checkbox-label">E-Book:</label>
+                    <input 
+                    type="checkbox" 
+                    name="checkbox" 
+                    className="checkbox"
+                    value={true}
+                    onChange={(e)=>setEBook(e.target.value)}
+                    />
+                </div> : ''}
                 {location.pathname === '/library' ? 
                 <div className="form-checkbox">
                     <label htmlFor="checkbox" id="checkbox-label">Read:</label>
@@ -123,6 +136,7 @@ function BookForm() {
                     onChange={(e)=>setRead(e.target.value)}
                     />
                 </div> : ''}
+            
             </div>
             <div className="form-group">
                 <button className="btn btn-block" type="submit">

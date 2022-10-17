@@ -1,5 +1,5 @@
 import {useDispatch} from 'react-redux'
-import {FaRegTrashAlt, FaMedal} from 'react-icons/fa'
+import {FaRegTrashAlt, FaMedal, FaBatteryHalf} from 'react-icons/fa'
 import {deleteBook} from '../features/books/bookSlice'
 
 const BookEntry = ({book}) => {
@@ -14,6 +14,7 @@ const BookEntry = ({book}) => {
             <span className="book-author firstName">{book.firstName}</span>
             <span className="book-author lastName">{book.lastName}</span>
           </div>
+          {book.eBook ? <span className="eBook"><FaBatteryHalf /></span> : ""}
           {book.read ? <span className="read"><FaMedal /></span> : ""}
           <button aria-label="Delete" onClick={()=> dispatch(deleteBook(book._id))}className="delete"><FaRegTrashAlt /></button>
         </div>
