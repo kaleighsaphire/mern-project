@@ -1,11 +1,13 @@
-<h1 align="center"><img height="75px"src="https://i.imgur.com/OgwNEG6.png" title="source: imgur.com" /> Liber</h1>
+<a href="https://liber.cyclic.app/><h1 align="center"><img height="75px"src="https://i.imgur.com/OgwNEG6.png" title="source: imgur.com" /> Liber</h1></a>
 
 I created this website to organize my library and keep a log of the books that I read, want, and the books I loan to my friends/family that are never returned!
 
 The program uses MVC architecture and follows separation of concerns, with Javascript, React, and CSS on the front end. Node JS, Express and Mongoose on the back connecting to a Mongo Database.
 Authorization has been implemented via Json Web Token, using an email sign up.
 
-All visuals and animations were created with 100% CSS styling.
+All visuals and animations were created with 100% CSS styling.<p>
+
+<p align="center">Visit site at: <a href="https://liber.cyclic.app/>liber.cyclic.app</a></p>
 
 <p align="center"><a href="https://imgur.com/60aR9Ca"><img src="https://i.imgur.com/60aR9Ca.gif" title="source: imgur.com" /></a></p>
 
@@ -30,7 +32,13 @@ All visuals and animations were created with 100% CSS styling.
 <h2>Future Features</h2>
 <ul>
 <li>Indication of book that has been loaned out. To who and when.</li>
-<li>New mobile layout + hamburger</li>
+</ul>
+
+<h2>To Fix</h2>
+<ul>
+<li>Author and Title character limit.</li>
+<li>Toggle whether book has been read.</li>
+<li>CSS images resize for mobile.</li>
 </ul>
 
 <h2>Dependencies</h2>
