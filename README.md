@@ -1,4 +1,4 @@
-<a href="https://liber.cyclic.app/><h1 align="center"><img height="75px"src="https://i.imgur.com/OgwNEG6.png" title="source: imgur.com" /> Liber</h1></a>
+<h1 align="center"><img height="75px"src="https://i.imgur.com/OgwNEG6.png" title="source: imgur.com" /> <a href="https://liber.cyclic.app/">Liber</a></h1>
 
 I created this website to organize my library and keep a log of the books that I read, want, and the books I loan to my friends/family that are never returned!
 
@@ -7,9 +7,9 @@ Authorization has been implemented via Json Web Token, using an email sign up.
 
 All visuals and animations were created with 100% CSS styling.<p>
 
-<p align="center">Visit site at: <a href="https://liber.cyclic.app/>liber.cyclic.app</a></p>
+<p align="center">Visit site at: <a href="https://liber.cyclic.app/">liber.cyclic.app</a></p>
 
-<p align="center"><a href="https://imgur.com/60aR9Ca"><img src="https://i.imgur.com/60aR9Ca.gif" title="source: imgur.com" /></a></p>
+<p align="center"><a href="https://imgur.com/WATox28"><img src="https://i.imgur.com/WATox28.gif" title="source: imgur.com" /></a></p>
 
 <h2>Current Features</h2>
 <ul>
