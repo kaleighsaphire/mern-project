@@ -11,8 +11,8 @@ function BookForm() {
     const [lastName, setLastName] = useState('') 
     const [genre, setGenre] = useState('')
     const [own] = useState(Boolean)
-    const [read, setRead] = useState(Boolean)
-    const [eBook, setEBook] = useState(Boolean)
+    const [read, setRead] = useState(false)
+    const [eBook, setEBook] = useState(false)
 
 
     const dispatch = useDispatch()
@@ -121,8 +121,7 @@ function BookForm() {
                     type="checkbox" 
                     name="checkbox" 
                     className="checkbox"
-                    value={true}
-                    onChange={(e)=>setEBook(e.target.value)}
+                    onChange={()=>setEBook(!eBook)}
                     />
                 </div> : ''}
                 {location.pathname === '/library' ? 
@@ -132,8 +131,7 @@ function BookForm() {
                     type="checkbox" 
                     name="checkbox" 
                     className="checkbox"
-                    value={true}
-                    onChange={(e)=>setRead(e.target.value)}
+                    onChange={()=>setRead(!read)}
                     />
                 </div> : ''}
             
