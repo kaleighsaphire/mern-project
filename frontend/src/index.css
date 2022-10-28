@@ -1324,61 +1324,25 @@ h6 {
 /***********Media Queries*/
 
 @media (max-width: 600px) {
+  .journal-link, .bg, .bookmark-container, .shelf-container, .tote-container, .pencil-container, .book-container{
+    transform: scale(.9);
+    margin-left: 0;
+  }
+  .header {
+    padding: 0 10px;
+  }
   .logo-container {
-    height: 30px;
-    width: 30px;
-    margin: 0 0 2.5px 10px;
-  }
-  .cover {
-    height: 31.25px;
-    width: 31.25px;
-    border-radius: 2px;
-    border-radius: 4px 60px 4px 4px;
-  }
-  .cover-cutout{
-    height: 30px;
-    width: 30px;
-    margin: -6px 0 0 0;
-  }
-  .page-one{
-    height: 22.5px;
-    width: 22.5px;
-    border-left: 1px solid white;
-    border-bottom: 1px solid white;
-    top: 4.5px;
-    left: 2.5px;
-
-  }
-  .page-two{
-    height: 20px;
-    width: 20px;
-    border-left: 1px solid white;
-    border-bottom: 1px solid white;
-    top: 4.5px;
-    left: 5.5px;
-  }
-  .page-three{
-    height: 17.5px;
-    width: 17.5px;
-    border-left: 1px solid white;
-    border-bottom: 1px solid white;
-    top: 4.5px;
-    left: 8px;
-  }
-  .logo {
-   display: none;
+    transform: scale(.6);
+    margin-left: 0;
   }
   .heading h1 {
     font-size: 2rem;
   }
   .heading p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
   p {
     font-size: .8rem;
-  }
-  .logo, a {
-    font-size: .75em;
   }
   .link-container {
     font-size: .75em;
@@ -1391,10 +1355,20 @@ h6 {
   }
   .btn {
   padding: 5px 10px;
-  font-size: 10px;
   }
 }
 @media (max-width: 475px) {
+  .page-links{
+    gap: 0px;
+    margin: 0;
+  }
+  .journal-link, .bg, .bookmark-container, .shelf-container, .tote-container, .pencil-container{
+    transform: scale(.7);
+    margin-left: 0;
+  }
+  /* .logo-container {
+    transform: scale(.4);
+  } */
   .form-group.form-section{
     margin-top: 0;
   }
