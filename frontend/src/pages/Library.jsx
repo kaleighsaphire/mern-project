@@ -15,7 +15,7 @@ function Library({showAdd}) {
     const {user} = useSelector((state) => state.auth)
     let {books, isLoading, isError, message} = useSelector((state) => state.books)
 
-    const sortOptions = ["Sort by", "Author", "Title", "Genre", "Read", "Un-read"]
+    const sortOptions = ["Sort by", "Author", "Title", "Genre", "Read", "Un-read", "E-Book"]
     const [selected, setSelected] = useState(sortOptions[0])
 
     if (selected === 'Author'){
@@ -28,6 +28,8 @@ function Library({showAdd}) {
       books = books.filter((book) => book.read)
     }  else if (selected === 'Un-read'){
       books = books.filter((book) => !book.read)
+    } else if (selected === 'E-Book'){
+      books = books.filter((book) => book.eBook)
     }
     
     
